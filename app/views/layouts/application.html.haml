@@ -1,0 +1,21 @@
+!!!5
+%html
+  %head
+  %title Busylife
+  = stylesheet_link_tag "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+
+  %body
+    .page
+      %header
+        #title
+          = link_to image_tag( 'busylife-logo.png' ), new_synchronization_path
+
+      #main
+        = yield
+
+      %footer Copyright © 2012 Provident Ventures LLC. All rights reserved.
+
+
+

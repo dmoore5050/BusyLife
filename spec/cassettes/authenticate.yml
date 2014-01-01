@@ -1,0 +1,349 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAxjaGVja1ZlcnNpb24AAAAACwABAAAACEVEQU1UZXN0BgACAAEG
+        AAMAGQA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        Mjk=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMCBOb3YgMjAxMyAyMTo1ODo0MSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAxjaGVja1ZlcnNpb24AAAAAAgAAAQA=
+    http_version: 
+  recorded_at: Wed, 20 Nov 2013 21:58:42 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAX1M9czE6VT03MzYy
+        ZTpFPTE0OTcyYjI2ZjQyOkM9MTQyMWIwMTQzNDY6UD0xODU6QT14cnMxMTMz
+        OlY9MjpIPTBmMmY2NjNlNDcxNjYxNjUwNDU2MzE2NGFmMWRiZjM0AA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        ODI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMCBOb3YgMjAxMyAyMTo1ODo0MSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Wed, 20 Nov 2013 21:58:43 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA1saXN0Tm90ZWJvb2tzAAAAAAsAAQAAAF9TPXMxOlU9NzM2MmU6
+        RT0xNDk3MmIyNmY0MjpDPTE0MjFiMDE0MzQ2OlA9MTg1OkE9eHJzMTEzMzpW
+        PTI6SD0wZjJmNjYzZTQ3MTY2MTY1MDQ1NjMxNjRhZjFkYmYzNAA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        NDIz
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMCBOb3YgMjAxMyAyMTo1ODo0NyBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA1saXN0Tm90ZWJvb2tzAAAAAA8AAAwAAAADCwABAAAAJGM5ZTcy
+        MTUzLTVkZmYtNDc1Zi1iYmVhLTdiOGFiMThmNmEwMAsAAgAAABVkbW9vcmU1
+        MDUwJ3Mgbm90ZWJvb2sIAAUAAAABAgAGAQoABwAAAUBfxYGQCgAIAAABQVGh
+        32gMABECAAQBAgAGAQIACQECABABCAAUAAAAAgIAFQEAAAsAAQAAACQ4NjRi
+        YjRhNi1mYTYwLTRlYzgtOTliNS03N2I3ZmVjOTY5MzALAAIAAAANVGVzdCBO
+        b3RlYm9vawgABQAAABoCAAYACgAHAAABQKwFxRAKAAgAAAFBTRil+AwAEQIA
+        BAECAAYBAgAJAQIAEAEIABQAAAACAgAVAQAACwABAAAAJGRmNmFhYmFkLTdl
+        ZGUtNGI0NC05OTM2LWQ2NGUwNmM3MGIyMQsAAgAAAApUaXRsZSBzeW5jCAAF
+        AAAC/gIABgAKAAcAAAFBS37zKAoACAAAAUFLf+FwDAARAgAEAQIABgECAAkB
+        AgAQAQgAFAAAAAICABUBAAAA
+    http_version: 
+  recorded_at: Wed, 20 Nov 2013 21:58:49 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/members/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="faeaa4a0ef37f6ee2dca6863c51f35d6",
+        oauth_signature="4zW90U1gM2gqZD36ExWjXZYLV0A%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1384984729", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        RXhwcmVzcw==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBtdXN0LXJldmFsaWRhdGUsIG5vLWNhY2hlLCBuby1zdG9y
+        ZQ==
+      !binary "WC1Db250ZW50LVR5cGUtT3B0aW9ucw==":
+      - !binary |-
+        bm9zbmlmZg==
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT0xNTc2ODAwMA==
+      !binary "WC1Yc3MtUHJvdGVjdGlvbg==":
+      - !binary |-
+        MTsgbW9kZT1ibG9jaw==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        REVOWQ==
+      !binary "WC1TZXJ2ZXItVGltZQ==":
+      - !binary |-
+        MTM4NDk4NDcyODQ2OA==
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQVVQsIFBPU1QsIERFTEVURQ==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjUzNTc1MTg3Ig==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMCBOb3YgMjAxMyAyMTo1ODo0OCBHTVQ=
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+1UwW7cOAz9lYXPaSNLsizNaZvOAttD0gKZUxc9UBI1EWBb
+        A0luti3670uNM9mkH7CnBWzA5nskH0mJP7rou1039FKPVlupuWcBcEDG+hGx
+        u+rgK1TIf0J5IJ4GD0IGFxCQOec4C97Sz+ik1MA88W1MRNw+9uTa7ZZ1mq46
+        l5YQ84yUruYVr7pA5juYkdj7tdS4/HabUm4po/+Ucf6Yj+Wdn+PS7f76QsYl
+        1ghTafRbIs04W8yHb6cWYEl5homsp5z86mrZfEqFujYPHwvlX9BVbBrXPJHx
+        odZT2V1f14zTlN66NF/7s5C56egbr2BeNom/IFtX7tOaXUOPeTMQgjPE6bXD
+        78dmawkIv1CfOqq0GsBLZ6RTYVCWGgpG9mB5MAYUP7fjJkH2rabLoNwvgwpE
+        2yBjhBlR2qCEZUy4IM+QGbU14ATvBSCogTHXGzhD1nI7KMHFYEDqngJy4PwM
+        eeWZAz6CYEOAQTA2GLZ5ecdHVMMIesRBycAY81yfIeTWQz9YPupeaUG56FUN
+        4kwLFlD0SJrdqDiJ7zfxvOdSB6F74xRKOVJAQ+frDHHPJSoMEETwyEiGEdqd
+        IW1Ioh+048ikV6QCrPVPkAFj/QCjosJGT7m80RfICuwNslEopSSVLEbsvvzb
+        6w/L19jOynb0noyfIh0h//8Y/osx0O2HJX6HGtNSLmN4ZXw1oikd49KWwfmW
+        nKCUx5R9C7Xg4x/bldz2UFrwEGe8xVLgiGUfyxxLucQ5ZQwU4kdXifOduB+W
+        kF7+3+Hfla7t+/2BSvBQLwbOevmGiTfMHJjeMUbPW2rDZ2KlEArWjUdNu3qO
+        9X7NGZdzuPvDM/HZKhT7STsMF3+/zjPk2IrbdidtxbViucH6iLi8gBV7AQba
+        PXsEP0WqOd2lGsO3btdLydo6nlK+IYQKD7RWkVLVnE4PcWth/HjfureepgQe
+        /bsXO6v18ec/E34xAzkGAAA=
+    http_version: 
+  recorded_at: Wed, 20 Nov 2013 21:58:49 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/members/51487b8b482d0fae5e0017ee/boards?closed=false&filter=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="41e49674a1f710d41987b08e4188765a",
+        oauth_signature="muQ9VJMdWoRxuaIcC8DnXHJvVAk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1384984729", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1384984728937'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Etag:
+      - ! '"461890150"'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Wed, 20 Nov 2013 21:58:48 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2bXW/bOBaG/4rhvY1lfkkkdZdM07TdZtpF3Ck6g7kgKcrR
+        Rpa8+kgmGfS/76Fs2YrtpJ42E2uABAggU5T0knzP40OK/u3PYRINw6FPMGEi
+        pgJLE1jGeIyQNIYMj4aZmlmocWJtMXid59HgfR5Nk2wKpyJbGji1PHqlKjUM
+        szpNj4YmzUsLN45VWtojeMaHYqqy5E5VSZ61lZLsOqk6teZJlrmPVVHDp7pI
+        4d6XVTUvw/G4Kmya5p7JZ2M9/l/6Dv2aXr4eaxA1ikHUKF2Jmhc2Lofhn8O5
+        LWZJWcID39tr6242L5JrVVmodJ1XrnY4jJJS6RSeCprz2cxmFVw7nNmZtkU5
+        XGpsVN8vL20av8uTbCXeqCL6Kb92Z5cN0MpcTYu8zqA8zQu4/F8E+T/x02H3
+        3NuZmtq2RzaKL4xy0rZOTpLUrh68Lj4pkullldnSSa2zqyy/ydyzXDt1Wrt2
+        G5Wd2I+1ThPTymyKYHjuff647Kl12dtmsBYFXzf65bffj9quuUzmruBxWwWu
+        Y6Pz5opVLYuU4IirSDKMkB9pf9jedXI7dxZU0SzJGrMpUzX61t6pM5NncVLM
+        VmVfj9YiqImQMsr62BiDGULIIrkhAjPBtdBMkAjFUNUihLm1myKyvJipdH8V
+        0DXlZV5U75PsCi5vressVOvSFInuXJ8qbdOfIeAaAxfujIuuvFCZM4k7vnVx
+        cLM4nhbWZovDZnybo3ldzNPmGIZpnt/Y4tN8OUYRiH2vyurYCU+qW6hEEKYj
+        JEdYThAOCQuJ7xHs/zpc1/4lsTfdmv6EoBAFIWUek9LVbBr46dvxOlyPCY6C
+        CBlFuKLIj5VPYcglUhu8eW/VtLaDPBsUKknLAyLnl9lNenJ+8naBnLTRNcqz
+        UavrhTo9os5uc9nvC/i/SJ2NeG9906t4x2iE+QQHIaIhlp5g/MF4FyMiJwRD
+        tRALT/jBPvG+anSHwUhQFFuKLfSx4QGBzsY27sR7Xd6mSWwHH4v8v9ZUA10n
+        aTTI68o7YNifmLf/joMrM9ZLeaP5Qt6okTcCeS/B36/g3+m0mG4Gv1QB1jKy
+        UsQ24n7gcgLMnizlABEYEhosmDYshmNEAuEfJOVoPdwrBEEigegEkZCikBHP
+        Z/SRlANqYhH6foikhyXZB0GrRnfGREj4Woh8YYhFLHIjrrSO1gh6ZVU0OM/z
+        LByowlyC90xVF/aA+Pmip3fxlzs2hpGPRjOQNtpQ1hv0uJLj6eIxhZ3WqSru
+        QWcNhL5A6tnBtMt/Bm8ygRKiEaGRkZjzmAETCKPyycDkRBDK4phgpgSSgJzY
+        qIOAqXV3r8CE8YigCSRGhIeUekSKh8AENWHWBFkUBYoRj6O9wLRq9L0xkUrq
+        yFc8kIrxCHo7kmInmKZQMk/V7QGh9B/zR/qKfUEdKHVUvQDpnwSkHb4zzw4k
+        qZQUBkGShJm7fRCYw2RKrbN7CiQRYu7B18Y2kBa++xZ6Vs273/uaWiwt4jQI
+        AgaDS7ndiZ66tMUgySpbxMocMitiZ2f6ps7TDoCctlFX2wuG/lEY2vKgIM+O
+        IUUiwg3DSGCCgIXBYnLw/Bhq/d03DC2yHUxDxD38/RhaNa+zGmyJjhT2NeEC
+        B4L6CMF/sMbQmc1ssezSw0Dn9EM5vajxH+PpSkpvGNMXchx0zXenhb5zYvNj
+        a76tVXoXv2JCaIhJ6GOPEPnYvKZZHWYwr5Ge5Gyfec2q0R2mAlCZDWysYhpH
+        FlGEJBVmHdVvcvjePmBMv7GXbz5Rfj6+XAr5axG9jtGXpOHZk4Zd3pJoI9z/
+        7hfLTkQsAkyUiAOOgCYwjznM3KX18vNDpw2Ib7xgxs0argwJ9hDH35s8rJrZ
+        SR5c/0oYfW6ZjgOqgfwmZmvM/HxxMbhIqoNOWd7dXs1fXeBxVpajcqHlJX3o
+        U/qw00TiWdKHjpNlpCNpTaAYZDGEIKQDobdEuFpioxZ/6knI0rE9TWKwW5wN
+        Hn5xvUxifLelhWKPCX+fJGbV6O5GFUO4DXwOXyLWD1iMEIqIuE+Xz3lxNTgD
+        b88PyJi7+c3Z7Ztz0TDmBhSNpktFL6TpE2l2Gmpr1fVvJg2IEJGJIXNRjCLK
+        3csotpE+MQs8xEJb4UsbIfdHDcZPLAKuQpqZWHMFDzCIb/bEQupGrSfL4eD2
+        lFJp4MYKW03daznts20RUIvfq6War4cnEwFOYNJHXOio2aEYB1uvBvcD/49N
+        XluK9Ir7bhsSnWAZIsgfAy+QOxaftrnPpAezgn24v2p0Z0gkjIRUhhJMlVWB
+        D67DsrNB8UIlZZ4NTtw+IFsckPufj4P4NSfX47JRtNiZ1Ch64X6fuL/TUAfZ
+        lNg6pm8xTtFy2Qn7ELmPvnhvY5xQjwq8T4yvGr0xcxRmo7M7mxI/2xQutoOT
+        HCx9yIUqfnz6hZRqfLMQNNJLQX1ZsHoJ8AfcFG/lVIHisYqQH0mhEdGQzgjm
+        mx+dvT3u6XgrqXoOzLSu7dmS1MJhD+12ZhNM3VZDFniUon3AsmpmZxC0JtoP
+        KKG+VExg97JSkc6vqUqdZ4f+ScPx6fnd6Yf6fNwV85Iy9IkoO220+eupZ4nl
+        1iz9ShlksxyEQ8xCH3nQU/ukDJh4kuyVMqwa/fX3/wNm4ocbKTkAAA==
+    http_version: 
+  recorded_at: Wed, 20 Nov 2013 21:58:50 GMT
+recorded_with: VCR 2.6.0

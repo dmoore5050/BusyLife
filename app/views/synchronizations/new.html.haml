@@ -1,0 +1,45 @@
+= link_to "Logout", logout_path
+%br
+%h2 Add New Link
+%h3 Select notebooks and board to synchronize
+= simple_form_for notebook_board, :url => synchronizations_path, :method => :post  do |f|
+	= f.input :notebook_id,
+			collection: notebook_list.map{ |n| [ n.name, "#{n.guid}|#{n.name}"] },
+			as: :check_boxes,
+			label: 'Select Notebooks:',
+			wrapper_html: { class: 'notebook_checkbox_group' },
+		  required: true
+	.alert= flash[:notebook_validation] if flash[:notebook_validation]
+	%br
+	= f.input :board_id,
+			collection: board_list.map{ |b| [ b.name, "#{b.id}|#{b.name}"] },
+			input_html: { multiple: false, size: 0 },
+			include_blank: false,
+			prompt: "--Select--",
+			label: 'Select Boards:',
+			wrapper_html: { id: 'sync_select' },
+			required: true
+	.alert= flash[:board_validation] if flash[:board_validation]
+	%br
+	= f.button :submit, "Add and Start Synchronization", :class => 'sync_btn'
+
+#synchronizations_wrapper
+	- unless notebook_boards.empty?
+		%h1 Edit Previously Setup Links
+		- notebook_boards.each do |notebook_board|
+			%h2 Board: #{get_board_name notebook_board.board_id }
+			= simple_form_for notebook_board, :url => synchronization_path(notebook_board), :method => :put, :html=> { class: 'checkbox_form' } do |f|
+				= f.input :id, :as => :hidden, :input_html => { :value => notebook_board.id }
+				= f.input :notebook_id,
+						collection: notebook_list.map{ |n| [n.name, "#{n.guid}|#{n.name}"] },
+						as: :check_boxes,
+						label: 'Select Notebooks:',
+						wrapper_html: { class: 'notebook_checkbox_group' },
+						checked: find_notebook_guids(notebook_board.board_id),
+						required: true
+				%br
+				= f.button :submit, "Update and Sync Now", :class => 'sync_btn'
+			= simple_form_for notebook_board, :url => 'destroy', :method => :delete do |f|
+				= f.input :notebook, :as => :hidden
+				= f.input :board, :as => :hidden, :input_html => { :value => notebook_board.board_id }
+				= f.button :submit, "Delete Synchronizations", :class => 'delete_btn'

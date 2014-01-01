@@ -1,0 +1,152 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trello.com/1/members/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="d427d2425281b2dde5a27173a8444767",
+        oauth_signature="JNax4XUtC6ccndP2HubBfv1OYf4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1379605814", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      X-Server-Time:
+      - '1379605816085'
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '1423'
+      Etag:
+      - ! '"-1499221038"'
+      Date:
+      - Thu, 19 Sep 2013 15:50:16 GMT
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"51487b8b482d0fae5e0017ee","avatarHash":"8ada34fcfeae0ccc20fdbfea7c448a0d","bio":"","bioData":null,"confirmed":true,"fullName":"Dustin
+        Moore","idPremOrgsAdmin":[],"initials":"DM","memberType":"normal","products":[],"status":"idle","url":"https://trello.com/dustinmoore1","username":"dustinmoore1","avatarSource":"gravatar","email":"dustinmoore@gmail.com","gravatarHash":"6865ad4c94c6f56b0fda941ab2f99a62","idBoards":["51487b8c482d0fae5e0017ef","51487b99397e4bf63b003cf4","51978b9ac3213aea6500c19a","51bb2b5632359a481e002a22","51d6d0ca27a305fa5300590a","51dc27e657a87e564f000d28","51e2bda15b27816835003506","520830fe31e17ec7620011ef","521248f3819c6e447f009cc2","522d24e6efaf3fde0300938c"],"idBoardsInvited":[],"idBoardsPinned":["51487b8c482d0fae5e0017ef","51487b99397e4bf63b003cf4","51978b9ac3213aea6500c19a","51bb2b5632359a481e002a22","51d6d0ca27a305fa5300590a","51dc27e657a87e564f000d28","51e2bda15b27816835003506","520830fe31e17ec7620011ef","521248f3819c6e447f009cc2","522d24e6efaf3fde0300938c"],"idOrganizations":[],"idOrganizationsInvited":[],"loginTypes":["password"],"newEmail":null,"oneTimeMessagesDismissed":[],"prefs":{"timezoneInfo":{"timezoneNext":"CST","dateNext":"2013-11-03T07:00:00.000Z","offsetNext":360,"timezoneCurrent":"CDT","offsetCurrent":300},"sendSummaries":true,"minutesBetweenSummaries":60,"minutesBeforeDeadlineToNotify":1440,"colorBlind":false},"trophies":["iOS"],"uploadedAvatarHash":null}'
+    http_version: 
+  recorded_at: Thu, 19 Sep 2013 15:50:16 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/members/51487b8b482d0fae5e0017ee/boards?closed=false&filter=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="1d49e79e1bdc3322166d7c6c6edd9e77",
+        oauth_signature="JimHsLxdeHLFDa1E0E6kbsKKM6w%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1379605816", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1Qb3dlcmVkLUJ5":
+      - !binary |-
+        RXhwcmVzcw==
+      !binary "WC1TZXJ2ZXItVGltZQ==":
+      - !binary |-
+        MTM3OTYwNTgxODkyNg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bWF4LWFnZT0wLCBtdXN0LXJldmFsaWRhdGUsIG5vLWNhY2hlLCBuby1zdG9y
+        ZQ==
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VGh1LCAwMSBKYW4gMTk3MCAwMDowMDowMA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctT3JpZ2lu":
+      - !binary |-
+        Kg==
+      !binary "QWNjZXNzLUNvbnRyb2wtQWxsb3ctTWV0aG9kcw==":
+      - !binary |-
+        R0VULCBQVVQsIFBPU1QsIERFTEVURQ==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTYzMA==
+      !binary "RXRhZw==":
+      - !binary |-
+        IjEyNDA3NDAyMjIi
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VGh1LCAxOSBTZXAgMjAxMyAxNTo1MDoxOCBHTVQ=
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        /wGTYL+JXikAAA==
+    http_version: 
+  recorded_at: Thu, 19 Sep 2013 15:50:19 GMT
+recorded_with: VCR 2.5.0

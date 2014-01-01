@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAdnZXROb3RlAAAAAAsAAQAAAF9TPXMxOlU9NzM2MmU6RT0xNDgw
+        M2I1ZDlkNDpDPTE0MGFjMDRhZGQ3OlA9MTg1OkE9eHJzMTEzMzpWPTI6SD04
+        MzI2YWE1MzdlNjg4ZDBjM2RmMGI1ZTkzYWQ2YTk3ZQsAAgAAACQwM2FkYzlm
+        Mi01NTY0LTQ0Y2MtOWI3Ny02ODU5ZWE1ZjkxZWICAAMBAgAEAAIABQACAAYA
+        AA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        Mzc5
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNyBTZXAgMjAxMyAxNzo0MzozMCBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAdnZXROb3RlAAAAAAwAAAsAAQAAACQwM2FkYzlmMi01NTY0LTQ0
+        Y2MtOWI3Ny02ODU5ZWE1ZjkxZWILAAIAAAAIQWxsIG5ldyELAAMAAACYPD94
+        bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBF
+        IGVuLW5vdGUgU1lTVEVNICJodHRwOi8veG1sLmV2ZXJub3RlLmNvbS9wdWIv
+        ZW5tbDIuZHRkIj4KPGVuLW5vdGU+PGRpdj5OZXcgYW5kIGltcHJvdmVkITwv
+        ZGl2PjwvZW4tbm90ZT4LAAQAAAAQ5khyRP+7g4ySojm2aUuRvggABQAAAJgK
+        AAYAAAFBGZeqgAoABwAAAUEZl+kAAgAJAQgACgAAApQLAAsAAAAkYzllNzIx
+        NTMtNWRmZi00NzVmLWJiZWEtN2I4YWIxOGY2YTAwDAAOCwANAAAACmRtb29y
+        ZTUwNTAKABEAAAFBHOxXqAAAAA==
+    http_version: 
+  recorded_at: Tue, 17 Sep 2013 17:43:28 GMT
+recorded_with: VCR 2.5.0

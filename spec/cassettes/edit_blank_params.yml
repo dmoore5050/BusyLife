@@ -1,0 +1,602 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.trello.com/1/lists
+    body:
+      encoding: US-ASCII
+      string: name=Notebook%20Name&closed=false&idBoard=51d6d0ca27a305fa5300590a
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="fc5117b6f18152f5715851ad5eda2111",
+        oauth_signature="GSc%2F%2F4kI6TnpPTrPw8%2Be2OnppAg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487291", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487293889'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '116'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 26 Nov 2013 17:34:53 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"5294dbbd65fd42064f0088f5","name":"Notebook Name","closed":false,"idBoard":"51d6d0ca27a305fa5300590a","pos":4}'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:51 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5294dbbd65fd42064f0088f5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="f5646b45c5490cc1c1652370eb168614",
+        oauth_signature="hYNZhPf95u3btHSFC9wepSEhd0E%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487291", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487294189'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '116'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 26 Nov 2013 17:34:54 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"5294dbbd65fd42064f0088f5","name":"Notebook Name","closed":false,"idBoard":"51d6d0ca27a305fa5300590a","pos":4}'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:52 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5294dbbd65fd42064f0088f5/cards?closed=false&filter=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="28a1e2f329c4e46d3d60778132c34b20",
+        oauth_signature="vR3PjsQJa%2Ff9AApin6HtrcY7L3U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487292", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487294546'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '2'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 26 Nov 2013 17:34:54 GMT
+    body:
+      encoding: UTF-8
+      string: '[]'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:52 GMT
+- request:
+    method: post
+    uri: https://api.trello.com/1/cards
+    body:
+      encoding: US-ASCII
+      string: name=Content%201&desc=%0D%0A%0D%0A%0D%0A%5BGet%20your%20free%20visual%20workflow%20at%20BusyLife.co%20%5D(http%3A%2F%2Fwww.busylife.co)%0D%0A%0D%0AChange%20note%20in%20Evernote.%20Text%20here%20is%20for%20reference%20only.%0D%0APlease%20use%20one%20of%20the%20following%20links%20to%20see%20the%20full%20note%3A%0D%0A%0D%0ANotebook%20Id%3A%20864bb4a6-fa60-4ec8-99b5-77b7fec96930%0D%0ANote%20Id%3A%2003adc9f2-5564-44cc-9b77-6859ea5f91eb%0D%0A%0D%0A%5BLink%20to%20View%2FEdit%20your%20own%20or%20a%20shared%20notebook%20in%20Evernote%20%5D(https%3A%2F%2Fwww.evernote.com%2FHome.action%23n%3D%20%22%22%22%22%20target%3D%22_blank%22%20)%0D%0A%0D%0A%0D%0A&idList=5294dbbd65fd42064f0088f5
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="b9bde2fee184672f9e5bfca66e7e3bc1",
+        oauth_signature="QTapGzRjzV8tfzX4tpuW%2BrOhoSQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487292", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      Content-Length:
+      - '682'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487294930'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Tue, 26 Nov 2013 17:34:54 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTyW7bMBD9FYK9NIBlU7J2IIfEDbq5RYCkOTQOCpIaWqol
+        MqAou27gf+9IXm+FIICzPz6+eaNVQXMaBVlYCAEsSUQohO+nzPdlEtARFbxY
+        QkvzN7o2rj+wEV1XsKn08hs0AuwTurGH4nULI9p2opW2EhcuZZaiW/7FMdhO
+        liBXnx00+05nc9af+qrea5oGtNuncOe4LM92Af2AV1cZTXNnO5xQdEBz3dX1
+        7qLjg+MD3ucXdNamvUBUYGTOW3cjXbWu3BahBcyfer7vBfGjn+TTMI/CccaC
+        n3Q/EDMWdqGP//NHcGRrOkuUBSDrqu14TTbGrlRtNoQ7ctu123mlYCwNeXlf
+        OveaTyabzWYsMFDvA1fHdrOS6yUQjUySSpO7Ndj+PCaP8MeREiy6W6KMJRYU
+        WloCMbrejvvi+xp4C6Rrex/+irgSMLlGJPhIpK70qiXOkBaRDiEkapiVH+d/
+        R0MYsyKfi5ykMSog5LGneMy8EGTqZZmIPJRGokBmcTZlx6KhgE15ITMVeFEU
+        h14YSullIkm8OI0y4JHKfBAn4uaIpgfzhBKa3BXVgUaz0QSvx0lbcgvFAG9A
+        dEHHgcf2QCQcWUK1TD6ZBsZc9qJ4p6/Jgu4/4rhdgrte0F+i5nqFnqvLdzy8
+        7gfueK9waMzvCg+73YWmRrgit4bbYU/8Ii6Y5EHCpyxSPJoyFmWM0z5pUHBd
+        te4guqqYo3HeriKOVBEGLA4VY2mqoqFqv0SnkofSWKyJUtZbNyftzwxe9wio
+        4Rr1NrjOGSd111xAfWioeYPXoDOjHaYQH0e+Goz58TQNcVv7aT9sjSlHap0F
+        VM5Aqpzcf/k6X0nZI+3+nzVB1J7cj/J8uvsHn/1q0l0EAAA=
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:52 GMT
+- request:
+    method: post
+    uri: https://api.trello.com/1/cards
+    body:
+      encoding: US-ASCII
+      string: name=Content%202&desc=%0D%0A%0D%0A%0D%0A%5BGet%20your%20free%20visual%20workflow%20at%20BusyLife.co%20%5D(http%3A%2F%2Fwww.busylife.co)%0D%0A%0D%0AChange%20note%20in%20Evernote.%20Text%20here%20is%20for%20reference%20only.%0D%0APlease%20use%20one%20of%20the%20following%20links%20to%20see%20the%20full%20note%3A%0D%0A%0D%0ANotebook%20Id%3A%20864bb4a6-fa60-4ec8-99b5-77b7fec96930%0D%0ANote%20Id%3A%20123456abcdefg%0D%0A%0D%0A%5BLink%20to%20View%2FEdit%20your%20own%20or%20a%20shared%20notebook%20in%20Evernote%20%5D(https%3A%2F%2Fwww.evernote.com%2FHome.action%23n%3D%20%22%22%22%22%20target%3D%22_blank%22%20)%0D%0A%0D%0A%0D%0A&idList=5294dbbd65fd42064f0088f5
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="53acc6d1e1735f99555d49db6fd8e94d",
+        oauth_signature="PMxTINTLQUqWWxo4BeDEVz6XRKY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487292", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      Content-Length:
+      - '659'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487295301'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Tue, 26 Nov 2013 17:34:55 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTyW7bMBD9FYK9NIAX7bIF5JC4QRvULYomzaFxUJDi0FJN
+        kQFJ2XUD/3tH8norBAGc9Q0f37zRWtCCptE0EZxLkfMgnAZxLoMwjGRMB5Qz
+        sQRHize6Nr47BAO6rmFT6+UXaDjYJ3RjD8mUgwF1LXelrfmFS5olb5d/EQbb
+        lRWUq3sPzb7T2Zx1p66q85qmAe33Kcx7VlZnW0AH8Opro2nhbYsIogVa6Fap
+        3UXHB8/6eZ9f0KmMu5hIYGTOnL8pfb2u/RZHi4IwHobhMMoew7yIkyJNR9Ek
+        +Un3gJixsAt9/J8/gidb01oiLQBZ165limyMXUllNoR5ctu67byWMCoNeXlf
+        ef9ajMebzWbEMaD2gatju1nF9BKIRiZJrcndGmx3HpFH+ONJBRbdjkhjiQWJ
+        li6BGK22o674mwLmgLSu8+Evia8AkxVOgo9EVK1XjnhDHE7ah5CoHqs44n9F
+        gxuzIveiIJMs4Txh2VCyLBgmUE6G0ylPh3nOcwnlNJvGwbGoLwijOEkzxksB
+        cnliaI6wHeoTamV8J+oDX2ajCd6DEVcxC6Kfo4e+uPeBMHdgDI50oCzGn0wD
+        I1Z2r/9OX5MF3X/EM7sEf72gv7hieoWeq8sHOzzjB+ZZJ2VozO8aD7vdhXgG
+        uAu3htl+IUKRiaBkUc7iIJUsjYMgnQaMdkm9VFXt/EFdtZijcV4jkaVSJFGQ
+        JTIIJhOZ9lX7bTmVPFTGYk06CTvr5iTymcHrHgdqmEZh9a5zxknGinFQh4aa
+        NXgNOjPaYwqJEPLVYCyO8myCa9mh/bAKU47UegsokZ7Uctzoz8Esbr5jWfv/
+        rDFOPSz3UMOI7v4B8qtrw0YEAAA=
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:53 GMT
+- request:
+    method: post
+    uri: https://api.trello.com/1/cards
+    body:
+      encoding: US-ASCII
+      string: name=name&desc=%0D%0A%0D%0A%0D%0A%5BGet%20your%20free%20visual%20workflow%20at%20BusyLife.co%20%5D(http%3A%2F%2Fwww.busylife.co)%0D%0A%0D%0AChange%20note%20in%20Evernote.%20Text%20here%20is%20for%20reference%20only.%0D%0APlease%20use%20one%20of%20the%20following%20links%20to%20see%20the%20full%20note%3A%0D%0A%0D%0ANotebook%20Id%3A%20864bb4a6-fa60-4ec8-99b5-77b7fec96930%0D%0ANote%20Id%3A%2003adc9f2-5564-44cc-9b77-6859ea5f91eb%0D%0A%0D%0A%5BLink%20to%20View%2FEdit%20your%20own%20or%20a%20shared%20notebook%20in%20Evernote%20%5D(https%3A%2F%2Fwww.evernote.com%2FHome.action%23n%3D%20%22%22%22%22%20target%3D%22_blank%22%20)%0D%0A%0D%0A%0D%0A&idList=5294dbbd65fd42064f0088f5
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="4f06892d04fb75e53414a1ec979b4fd4",
+        oauth_signature="1TMZ%2BHbfoEioGgNAbms7Z4yr2FM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487293", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      Content-Length:
+      - '675'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487295668'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Tue, 26 Nov 2013 17:34:55 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTW2vbMBj9K0J7WSFObMeX2NCHtCtdIRuDdoWtKUOXT7EX
+        RyqSnCwr+e/77FzfhhHWdz86OnqntaQlTeMikZwrkCqWQkTjJIziMJrQAeVM
+        LsDR8p2uje824YCua9jUevEFVhzsM7qxh2KNgwF1LXfC1vzCpcyCt4u/OAbb
+        iQrE8sHDat/pbN52u66q85rVCrTfpzDvmajOtoRuwJuvjaalty1OkC3QUrdN
+        s7vo+OhZj/flFZ2NcReIJEZmzPmp8PW69luEhqcdB1EUxNlTlJfjpEzTYZbk
+        P+l+IGbM7Vwf18s9eLI1rSXKApB17VrWkI2xS9WYDWGe3LRuO6sVDIUhrx8r
+        79/K0Wiz2Qw5Bpp94OrY7rZiegFEI5Ok1uRuDbbbD8kT/PGkAotuR5SxxIJC
+        SwsgRjfbYVf8rQHmgLSu8+FSxFeAyQ0iwUsiTa2XjnhDHCLtQ0hUP6s8zv+K
+        BjdmSR5kSSZZwnnCskCxLAwSEJOgKHga5DnPFYgiK8bhsagvCMdMikLFQZpm
+        SZAkQgQFz/Mgm6QFsFQVEfATcTNE04F5RgmN7mR9oNFsNMHjMeIqZkH28HpE
+        F3QceHQHIuHIEqpl9NmsYMhEJ4oP+prM6f4jntkF+Os5/cUbppfoubq8x8Pt
+        fmKedQqHlfld42a3u9DUAJ/IjWG2fyeRzGQoWJyzcZgqlo7DMC1CRrukXsFN
+        7fxBdLWcoXF+XTJLlUziMEtUGE4mKu2r9o/oVPJYGYs16STurOlJ+7cGj3sE
+        tGIa9da7zhkndTeMQ3NoqNkKj7H/DeibQXdSRCk2d92g77bB6JFVbwFF0/Mp
+        RjeLH9Opv59iWfv/rBECDvopu3+lU7ftUwQAAA==
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:53 GMT
+- request:
+    method: post
+    uri: https://api.trello.com/1/webhooks
+    body:
+      encoding: US-ASCII
+      string: description=Webhook%20for%20list%20427%3A%20Notebook%20Name&idModel=5294dbbd65fd42064f0088f5&callbackURL=http%3A%2F%2Fbusylife.herokuapp.com%2Fsynchronizations%2Ftrello_listener%3Flist_id%3D427%26user_id%3D9999
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="18159e2639e0f298b5313dc659b9137d",
+        oauth_signature="iRLEaActKVRmYjGcn09DCxmtfG0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487293", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      Content-Length:
+      - '210'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487296160'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '240'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 26 Nov 2013 17:34:56 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"5294dbc0da28482220007d55","description":"Webhook for list 427:
+        Notebook Name","idModel":"5294dbbd65fd42064f0088f5","callbackURL":"http://busylife.herokuapp.com/synchronizations/trello_listener?list_id=427&user_id=9999","active":true}'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:54 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5294dbbd65fd42064f0088f5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="418e37abf7c94a28e832c9641518e1f2",
+        oauth_signature="qk4HMc32rUT6AjKminG35KCC9pw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487294", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487296471'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '116'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 26 Nov 2013 17:34:56 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"5294dbbd65fd42064f0088f5","name":"Notebook Name","closed":false,"idBoard":"51d6d0ca27a305fa5300590a","pos":4}'
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:54 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/5294dbbd65fd42064f0088f5/cards?closed=false&filter=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="88c233f3d13f1da8b4b853e4c9f6f4d1",
+        oauth_signature="7GNlnSu%2BBalpjIIRNjy6bHtYIXI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1385487294", oauth_token="fbee90bdb3bf1289d18e4b2efbe5101ec6528c558fd29b66e10392933d73563a",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1385487296775'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Etag:
+      - '"-1231948450"'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Tue, 26 Nov 2013 17:34:56 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2Wa4sbNxSG/4qYfmnAY0tzH0M+eN2QpnFLSNJAu7sUXY7s
+        wTOjZaSxuw3733Pm5vW2hRC6/WaMsXSkI716dfTg689eobylFwd5pIQAmqYi
+        EoKxjDIm08CbeXIHcv/GQfXBcQfWW17fYrA0FjBR89LCzFM4suHWraQrDoW7
+        xxUDykKfMT9IPrJ0GUbLOJrnNPgdV1RgJc64aW7q6Xv9Ghy5N21DdANADoVt
+        eUmOptnr0hwJd+SqtfebQsNcGnL7/c65u+VicTwe5wIHymHgxbTcesfrLZDa
+        OCBFTV4doOnac/IR/nRkBw2GLdGmIQ1o7NUSiKnL+3mX/K4EboG0tovhVxO3
+        A5xcopKi3pKyqPeWOEMsKu2H2rLs91pO+/+CHWHMnrxRS5Il6GjEE1/zhPoR
+        yMzPcxH7aHWqQeZJHtIpqU+gIVcy14Efx0nkR5GUfi7S1E+yOAce65yBOBm3
+        QTWdmE8FHBevVDHaaI41weNxYne8AdXL6xWd2TH6aEcjYXJJmmrxo6lgzvE6
+        Tf1d/ZLceMOHON5swb288f4QJa/3GHlxfo/j7f7AHfeWNfoyw/q6Mrzpi4yp
+        RFHJg5SHNNY8DimNc8q9btKmsO6xEFUSaxUFNIk0pVmm437Oz1AJaOwnFKmG
+        OizUh51pMDHOaNdbOcflroLarQ0eZ9JQ8RrrqQ89zjhVb80rwK3XpnYYJgz3
+        ujNY6CwJs2jm2W6Hzmac8+6nt5u9lJ0cwdW2ew6fvYPp3wUKOOAlYIkMOkeZ
+        4ya2FVY2hTgLabMV7fYvXPb8mQ0rPXbXXavL6qKm6pQPU/jpJEO/M74p7ror
+        85auabt32cJgwcNZu/OpX7REy+3k4+jt0C25gHJs98f/tSlR5lQtrgF8DH2d
+        yMWZJf9yxvbriQu8O18O5vvMe5g9ZZJWqaAsp2GqkUmBDp+TSfE8yKILk77O
+        JBaEUZxwIRXo7QU+f4cPey74BBN8wiBNsqfwqeq3dB1W7y/wOTHkzJJvg8+U
+        iPBhJ/gE/4QPKB0oKVkYUYb4yJ4XPkmUXuBz+UP0/zAp+K9M6n9GHEU5i4On
+        OLra/rZauderC45OVDmz5NtwNCUijgK/9/3h9gte9ZG2nA0AAA==
+    http_version: 
+  recorded_at: Tue, 26 Nov 2013 17:34:54 GMT
+recorded_with: VCR 2.8.0

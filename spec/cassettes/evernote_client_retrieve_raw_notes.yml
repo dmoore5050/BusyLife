@@ -1,0 +1,159 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAxjaGVja1ZlcnNpb24AAAAACwABAAAACEVEQU1UZXN0BgACAAEG
+        AAMAGQA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        Mjk=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNyBTZXAgMjAxMyAxNzoyMDoxMSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAxjaGVja1ZlcnNpb24AAAAAAgAAAQA=
+    http_version: 
+  recorded_at: Tue, 17 Sep 2013 17:20:09 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAX1M9czE6VT03MzYy
+        ZTpFPTE0ODAzYjVkOWQ0OkM9MTQwYWMwNGFkZDc6UD0xODU6QT14cnMxMTMz
+        OlY9MjpIPTgzMjZhYTUzN2U2ODhkMGMzZGYwYjVlOTNhZDZhOTdlAA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        ODI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNyBTZXAgMjAxMyAxNzoyMDoxMiBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Tue, 17 Sep 2013 17:20:10 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAlmaW5kTm90ZXMAAAAACwABAAAAX1M9czE6VT03MzYyZTpFPTE0
+        ODAzYjVkOWQ0OkM9MTQwYWMwNGFkZDc6UD0xODU6QT14cnMxMTMzOlY9MjpI
+        PTgzMjZhYTUzN2U2ODhkMGMzZGYwYjVlOTNhZDZhOTdlDAACCwAEAAAAJGM5
+        ZTcyMTUzLTVkZmYtNDc1Zi1iYmVhLTdiOGFiMThmNmEwMAAIAAMAAAAACAAE
+        AAAAZAA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTEzMg==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAxNyBTZXAgMjAxMyAxNzoyMDoxMyBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAlmaW5kTm90ZXMAAAAADAAACAABAAAAAAgAAgAAAAYPAAMMAAAA
+        BgsAAQAAACQwM2FkYzlmMi01NTY0LTQ0Y2MtOWI3Ny02ODU5ZWE1ZjkxZWIL
+        AAIAAAAIQWxsIG5ldyELAAQAAAAQ5khyRP+7g4ySojm2aUuRvggABQAAAJgK
+        AAYAAAFBGZeqgAoABwAAAUEZl+kAAgAJAQgACgAAApQLAAsAAAAkYzllNzIx
+        NTMtNWRmZi00NzVmLWJiZWEtN2I4YWIxOGY2YTAwDAAOCwANAAAACmRtb29y
+        ZTUwNTAKABEAAAFBHOxXqAAACwABAAAAJDM5ODc0ZDhhLWEzY2YtNGIwOC1h
+        NDkyLWVmMzY0N2Y5ODM3ZAsAAgAAAA9OZXcgVHJlbGxvIENhcmQLAAQAAAAQ
+        HJCfhYxDppJejoGhbDrG4ggABQAAAIoKAAYAAAFBHOxfeAoABwAAAUEc7F94
+        AgAJAQgACgAAApULAAsAAAAkYzllNzIxNTMtNWRmZi00NzVmLWJiZWEtN2I4
+        YWIxOGY2YTAwDAAOAAALAAEAAAAkNzU4YmU4ZTQtNjNmNi00YTU3LTlmN2Mt
+        OGM4YWYxOTI3OTA1CwACAAAAD05ldyBUcmVsbG8gQ2FyZAsABAAAABBZUWOc
+        A+4YOycPZAGRd4nzCAAFAAAAogoABgAAAUEc7GNgCgAHAAABQRzsY2ACAAkB
+        CAAKAAAClgsACwAAACRjOWU3MjE1My01ZGZmLTQ3NWYtYmJlYS03YjhhYjE4
+        ZjZhMDAMAA4AAAsAAQAAACRlZGQyOWM1ZC1mMjFjLTQ3Y2YtYTFiNS02YTU0
+        NjE2OGU1MTcLAAIAAAAPTmV3IFRyZWxsbyBDYXJkCwAEAAAAECecpvct3Sjr
+        xsSegaOaarcIAAUAAACLCgAGAAABQRzsY2AKAAcAAAFBHOxjYAIACQEIAAoA
+        AAKXCwALAAAAJGM5ZTcyMTUzLTVkZmYtNDc1Zi1iYmVhLTdiOGFiMThmNmEw
+        MAwADgAACwABAAAAJDg0OGE1NGMzLTEzYzctNGExMy05MTA3LTkyNWZmZmVl
+        NDZmZgsAAgAAAA9OZXcgVHJlbGxvIENhcmQLAAQAAAAQPFwSWFCit2a62ArZ
+        XeitoggABQAAAIsKAAYAAAFBHOxnSAoABwAAAUEc7GdIAgAJAQgACgAAApgL
+        AAsAAAAkYzllNzIxNTMtNWRmZi00NzVmLWJiZWEtN2I4YWIxOGY2YTAwDAAO
+        AAALAAEAAAAkNDU0MTBjNzctOWExZS00YmExLWE2YjgtODRiYWZjZjgwNTZm
+        CwACAAAAD05ldyBUcmVsbG8gQ2FyZAsABAAAABAYZMuWTYm2rRmcC8ZapfkB
+        CAAFAAAAjwoABgAAAUEc7GswCgAHAAABQRzsazACAAkBCAAKAAACmQsACwAA
+        ACRjOWU3MjE1My01ZGZmLTQ3NWYtYmJlYS03YjhhYjE4ZjZhMDAMAA4AAAgA
+        BgAAAqEAAA==
+    http_version: 
+  recorded_at: Tue, 17 Sep 2013 17:20:10 GMT
+recorded_with: VCR 2.5.0

@@ -1,0 +1,142 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAxjaGVja1ZlcnNpb24AAAAACwABAAAACEVEQU1UZXN0BgACAAEG
+        AAMAGQA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        Mjk=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBOb3YgMjAxMyAyMzowMjoxMCBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAxjaGVja1ZlcnNpb24AAAAAAgAAAQA=
+    http_version: 
+  recorded_at: Sun, 24 Nov 2013 23:02:07 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAX1M9czE6VT03MzYy
+        ZTpFPTE0ODAzYjVkOWQ0OkM9MTQwYWMwNGFkZDc6UD0xODU6QT14cnMxMTMz
+        OlY9MjpIPTgzMjZhYTUzN2U2ODhkMGMzZGYwYjVlOTNhZDZhOTdlAA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        ODI=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBOb3YgMjAxMyAyMzowMjoxMCBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Sun, 24 Nov 2013 23:02:07 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAApkZWxldGVOb3RlAAAAAAsAAQAAAF9TPXMxOlU9NzM2MmU6RT0x
+        NDgwM2I1ZDlkNDpDPTE0MGFjMDRhZGQ3OlA9MTg1OkE9eHJzMTEzMzpWPTI6
+        SD04MzI2YWE1MzdlNjg4ZDBjM2RmMGI1ZTkzYWQ2YTk3ZQsAAgAAACQwM2Fk
+        YzlmMi01NTY0LTQ0Y2MtOWI3Ny02ODU5ZWE1ZjkxZWIA
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.1; Ruby / 1.9.3;
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tdHJhbnNmb3Jt
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24veC10aHJpZnQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MzA=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBOb3YgMjAxMyAyMzowMjoxMSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        RXZlcm5vdGUvMS4w
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAApkZWxldGVOb3RlAAAAAAgAAAAADLQA
+    http_version: 
+  recorded_at: Sun, 24 Nov 2013 23:02:08 GMT
+recorded_with: VCR 2.6.0

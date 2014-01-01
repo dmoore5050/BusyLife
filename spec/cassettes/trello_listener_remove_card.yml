@@ -1,0 +1,971 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/52b609e1996e8ebd5000325d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="252eb4abf7eeda0ef4bac0012af8245b",
+        oauth_signature="gwHgh0qSyFoc7ZtM6q57u5QGpLE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673617", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673617663'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '115'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 22 Dec 2013 00:53:37 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"52b609e1996e8ebd5000325d","name":"Title sync","closed":false,"idBoard":"5298f71b6146fa1b050083eb","pos":128}'
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:37 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/52b609e1996e8ebd5000325d/cards?closed=false&filter=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="f826bd64f2841258fe0835544565962d",
+        oauth_signature="%2BE1knoAGjHcdY%2BNKK%2BklwMIBrNk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673617", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673618127'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Etag:
+      - '"650529881"'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Sun, 22 Dec 2013 00:53:38 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2da3PbRrKG/wpX+yFJlYea+8VVW6csx9eV7NiO7dhJ6tRc
+        JUoUKZOUZGUr//00SOJiIDkLlPBxKrEtQmgS7Bk8mG686P71PwezcPDwQFAn
+        sYmUmUBYNJZRjC2V7ODBgT+L/uLFJl6+29hNXB88/PV32DhfriMYJjtfxwcH
+        AX5zbNebR34zu5lt7uAdKSYMEYoo+ZmSh0w+ZHwqqfwM7xji2sMev61+W5R/
+        fn0WN5O75fVqklYxTm5m62s7n9wuVxdpvryd2M3k8m56dL2+O56lOPXLye/f
+        n202Vw8PD2G7g+3z3fYfyjd8fGYXp3GyWG7iZLaYPLmJq+Ln6eTn+HUzOYsr
+        2LyepOVqsooJXi18nCwX87tpYfzTPNp1nFyvi23wJ002ZxF2nsOxzBank/ls
+        cbGebJaTNRzr9lfX8/n2sx6Wn/8KXrjl8mLyIjychCStdTYgFUNE3HGOjGES
+        Bckjll5hR0lptDXgxkfCGEZchYB4wBFpFjTyjltKg02wpXLdMRxNcTAfZvH2
+        8EmY7R25vF1M4OvZyfrMrmLYHt72iBru2LtxDX68vb2dxtJLfnl5+Hx5GacW
+        BnS5+OfiX5PfDnb/TTZ2dRo3//rt4H/d3C4uYMsPzZHcj++PdmMPHi7ALw9g
+        hh0t7Wo3zYxOijhJuEyWOCww1iy6g2Kn49l6U09FYoyMOroAu2BGRdjucxIv
+        XVytP8BBht1MnIV3Z8sVGApFi1ePNhvrzy7jYvN4CV+nPIZLu4AZtd1U71HN
+        34W9jPDRj5eLDWyeUPisqyVMdUaV1A8O1sUnFG6GfZZXm18WV09nsAuM6Glx
+        Qvzn4Ga5PTPwg4MbGASYIrvj3B/m/kPW127tVzPX2JSWp+769A942+aJtnun
+        +uXj4qfCqti6vCyOfLeLrb7J7nXh+NXsqhiyg4eb1XVxZl7HnQv+bPxc+Gn7
+        pnNw+br04963u5dz6+J8//P2679fzeEwy9myWUU4GbbzxB82XPIX3/H6vxse
+        wtghv3M+ogd/PmhRSRtDcfBWapgKmqpxqWSMylTqQyXntcVBGmRi4Ignh5FL
+        OKCQklKMOauwyFRqU4mNRSVWUokbIui3VHLLk3Tj1WmmUgWXhkuGUak0BCqx
+        ikqsQyWWnNVSwHRxGNOYwphUElNFRaZSHyoR2M8QlhA2WiAOyyME66OInBbR
+        SWUd5jJTqU0lMRaVREklTeAi/S2VXq3O1xefn4dMpQouDZcMo1JpCFQSFZVE
+        h0rcqOCdgNhNFxGcimNSSU4JZplKfaiEBdGccIKUZwaopA0AiSfk4W0M0dZg
+        qjOV2lSSY1FJllQymmH+LZU+h82Pmy9vVaZSBZeGS4ZRqTQEKsmKSrJLpVZe
+        SYxLJS1yXqkXlTTW1BnjkbLWIi64R444An9hF+GkNpaTTKU2lfRYVNIllQgj
+        WLVCuMuPF28W7948zliq6NJwyTAslYaAJV1hSXewJJI2xFlBgErY+OTGxJKa
+        Up5DuF5Ysjg4GS1GWsJfXMuEHE0EeZ2It5oR4W3GUhtLZiwsmQpLXHEhv8XS
+        67eXy9MT6TOWKro0XDIMS6UhYMlUWDJdLFmnnGTObrEUKRkXS8LojKU+WJJM
+        E+exQinZhLgXHDkcMLIkYAp/SYpNxlILSxqPhSWCKy7BSPBWbunsavFevclc
+        auCl4ZJhXCoND2H0Ki6B+ztgChzbQBmG/7EQetTkkpoahTOY+oBJKJuiZAYR
+        2AMMAkGGagqcotomTBNOObnUARMZDUykApPGlLbSS0+vjh99uTmSGUwVXxou
+        GQam0hDARGowkQ6YZPSYUOaJgCWTdHZUMOkpZ1kh0C+/ZGXSNEbYQ8OKyRBY
+        LAlqkZBWRiowly7fi+uAaTTdEqmES8RIiVvKpbePH326esavM5gqvjRcMgxM
+        pSGAqVYuka50SWoXCVUxYosx9UGOCyZlSAZTHzBRzRV1XCFtdUDcGgNgUhSZ
+        pLXECmuIyDOY2mAaTbpEKu0SJdSYVub7NFJyfn30LIOp4kvDJcPAVBoCmGrx
+        EumqlxS3FkPAlYock+V+VE2lmRKZU9/9Vkw+qgSXCBS2Sm9sGXKwikUuMKHg
+        euFV9BlMbTDx0cDEKzBRw1Qr9y3p88/i/C6HcjVfGi4ZBqbSEMDEazDxLpgE
+        0YJgCB1Ikfw2I4NJsgymfgImbhORBsJumTziDEydkgaJKLQMJEqp8z25DphG
+        k1WSSldJuVCylfy++fpJzG9evc1gqvjScMkwMJWGAKZaWEm6ykqtPI0ksigV
+        gCmxMcHE8RSzHMr1WzEZTIilHHGqFOKaCWRUxEgITiPz3gWVNUwdMI2mrCSV
+        tJJKSngr+R1O1ucf3MnTDKaKLw2XDANTaQhgqrWVpCuu1N88iJIwHhdMgmYw
+        9csxJcOdIgTBhUQCnSCes1RpFKKmWuFoLOYZTG0wqdHApCowKS1oK/l9Zbn9
+        +OX83xlMFV8aLhkGptIQwKRqMKkumCwjKniptysmp/24YDIiywV6gSmpYIVX
+        AQlf5JhUVMgJHZFlKooYPKXMZTC1wTSa6ptUsm9quCGt5Pf8xr3eHD39ksFU
+        8aXhkmFgKg0BTLXsm3R13wZ7BycPZ9vkN0l8TDCRKcM0g6lXmRPuhTcBI209
+        hHJEQCing0CyyADqSIKQWcfUAdNoum9aCSwZIdS0kt9fPl48Sx+en2cwVXxp
+        uGQYmEpDAFMt/KZdgaVtrZjG1DFxOiU8K797gYkJgy2nBCUIrhGHwA05yiKC
+        M1qGSBLhJmUwtcBkRhNY0roAE+dYtnNM+O3lrf5lkcFUp4pqlwzMMe0ND4Wp
+        BZa0q2OyRGOcaMLFksmkYMcFk8535XqCySilvWEIzk+CeJAauWAJMsJE4T2z
+        0uRQrgOm8QrDVTomJjHnrRwTO3p+LjbndxlMFV8aLhkGptIQwNQoDdfVMblo
+        IsNBaZlgNliqxwQTm8L1J4OpD5hikq74JVJYSTCwGmmOGcIKeyqcIZ5m5XcH
+        TKMJLGmlY2JKatbKMYm3Z5crOX+dwVTxpeGSYWAqDQFMtcCSdnVMzjgSnJeh
+        COWYpmZcMKmc/O6pY5IxCmw9MhFib65sQkZ7D4tcyUIgIsicY+qCaTSBJa10
+        TMwwSlo5ps8U25Of8fMMprqiUu2SgaWY9oYAplpgSbs6Js9VcppZzGA6MKbS
+        mGDiUypNBlOvupUhBY0lRkxjABNXARClDDIQahPiOQWjDKY2mEYTWNJKx8Sx
+        kbgtsPzw5b15+keuXNnQSdYuGSiw3BsCmGqBJe3qmCKDM0gmutcxxTGrMXE5
+        JTSHcv1CuSCDEQAmHBwplN8EaUc98skl6zxRPuYVUwdMo92VY9VdOa4EYa0V
+        0zqenrw/+4QzmCq+NFwyDEylIYCpvivHunflYlAQw2FgiixCOUnHBZMwuXpl
+        v/4DsCyi1lCkU1G9UkkwsAn8GXTEyiRrOMtg+hZM25XNSGCqyp5sGxC0VkxP
+        j6l5+fM6g6lRvaR2ycCyJ3vDQxi9GkzdsieJULgWE8kYLqoLqFGT32pKTc4x
+        9avHxIRxjFJksXeIC5yQg7FB2jvqWHJY8fwQbwdMo8kFWCUXEHAZaJf7Pnr+
+        +dlr/PJNBlPFl4ZLhoGpNAQw1XIB1pULJOUBHkGqAkyW4pHBJHXWMfV7JCUw
+        GAyHUfIUDJKWCAI4gzRxwgS5VTllMLXBNJpcgFVyAUE51S25wLNHr+7efHqV
+        c0w1XxouGQam0hDAVMsFWEcukDCx2gkLUYMowKTHLK3L9ZTirGPql/xmSRll
+        FcLJaQATlchGYRC2xEinKU08N7jsgGm8VnKVXEBwLNudCF49fXZ69OLrSQZT
+        3X2pdsnAtk17QwBTo5lcRy6QsOFSRiVYkWOyko2q/NZTxXLfpl5gCtQ7bwFM
+        MRKPuDYEWWElhHI8GK1FpI5mMLXBNJpcgFVyASEUbvci+PRKnjw6Fp8ymCq+
+        NFwyDEylIYCplguwjlwgFWXuYTpoLwLGxopRwWSmBOfSuv2U34qHQLhHOmGL
+        OCMBaa4TUkE5R3SQjmW5QAdM49VjqpqkCFU8lPItmP79Nt58/EOZDKaKLw2X
+        DANTaQhgatRj6nRJATAJH5zmXJrikRQ+Zv9dABPX+a5cv+oCkslItCqeQQmI
+        exyR9doj54T2Tlu4ZIQMpjaY7l2PaQ1febI/PSo0aaPb7Qhu3h//9OPLO5LR
+        VAuSapcMVDLtDQFNEhUDUPLpL+DEuOYG5kXRhhePG86ZqSG5wkC/znJGcZ54
+        QtEHW1QYAEwBrhARInlHYEkbMpw6cLp3TaaPq9l2usw2M5h9MzhHTle2cMAE
+        Jj6cwXtewWlE210Kzt88uT3/8O6PzKsKOw2XDONVaQi8Uui2GBO0HxPUGBO0
+        G5M2wmhLjjkmwgSespwq7ykuCASOyhMUCFWFgUS66PjkqYKB8rFISWWEtRF2
+        7+pNW/9XiidJqWi3LQgvwrtf0qNHmVR1OYHaJQPrEOwNgVQaFdMOddROiX77
+        4Mqo9+4ASCo/6ttTH24kptGzouyuQUXRXWR8MkhHsDAYwnae11QdIN1bH771
+        f6V0kkybdruCxc0lCSfnuTBKzZWGS4YBqTQEIJkdkDoqp8RilA4HnopWBRqm
+        /phAIlNC8z27fmXkiCDGSYdoTBKCPAMGTnjkmBfGBFUUuMxAagGJ3FsXvgPS
+        90X0MFm4HyoyCcHa/QouP1w8uVgduUymCjANlwwjU2l4CEO4J9M2gkML1yUU
+        JTrCcNitQDyqMYsQAKEEyTFcvyIE3nshiUQwQTjimnpkoxHIGZUIt5JZmm/e
+        dQh1b4H4LobrEkoR1W5c8ES+unj52r3LhKpA03DJMEKVhkAosg/m/p5QxMvI
+        gvYsYWwdZ+MSytBcjaDfs3XOW7hyU6Q1VkXnXgKsIgqZIKSJNMJZm7uqdAh1
+        b6X4yR2MqF8uwmRtF8Etv26d9n24XC5X4HOBa2hpTdpNDZ78tBLvH5ujDK2a
+        PbVLBkJrbwjQoujyDu2GBe2HZYexelg6HOOBY6uoUYVMSgg9ZklxQaeM5Efx
+        +q20ischrYL1VSoKZLrgi5a/GjGiOZOaKkNx5libY/cWlgPH0mwFy6y/wdi0
+        xJjCXLRbILx+9jbenF3mR4drGjVcMgxjpSFgjBUY245Kf4pBMMJ0UGYr9nRs
+        TE0VUEzh3Eqqn6YqEAm/cShFBgYwcWA1ZhhYFb3kBYlwpckUa1Ps3ir0XUZr
+        8v2lvXNxwv6nWnwpinW7P8LLZXjHH8e8+Krh03DJMGqVhkAtXua0toOAuo/w
+        Ca+1sVoFOHcwIXLMrlKCTXGuX9ePUQaWVFEKhSRLDPHkYKVFpELCc05UIlqr
+        rEvoMOregvRdTmvyfYip0PLE+d2E1JxiiupW7p18ePH8ySnPne9q3DRcMoxT
+        pSFwSpSZrXog/kKzIL7VgfIxS0cBrOBMy7DqtaDiSpiAHeI4skIHapDhSiEF
+        8FKBpiITmWHVhtW9ReofZzAZVvBzJflUgsl2Q5fNyfXZ4vmTr5lQFWgaLhlG
+        qNLwsLjbdFu7vwMmjuECTvS2Qoth4+ar2FSLfGewn0Cd+ECZFUikYIpIzyHt
+        qUJWGYe9FtipXKGlA6Z7C9Qf3cLMgJG8i/asQpPCuN3S5fjL+SotLj5mNFWE
+        abhkGJpKQ0ATzO9bVAwA2g5AG05SJho4MaKAE/Nx1FUTn9J8U7DnTUFvkyyq
+        2VEXi2Q6xsg6ylHQUmIbovU2F0PowGkE6Xn7wT6lJW83dbEvTo4+3J1mTVVN
+        mIZLhqGpNAQ0FfLzv32sT6pEKDbOFY2DTbKj5p74VOL8zHEvMGkchA6WoigU
+        RtwwhQw1HBEScAAuUQi8M5jaYLq3BP3H66v5zMNcLrmkMdXtni7m9uzzo5/n
+        88ylCi8NlwzjUmkIXDIoVN7vYIlTyrGDk4UAlgIbVUQlpjg/qtezeBQBFHnl
+        AUsOgjlYOiFHJEGUC8eY9TrFvF5qY4neW4j+HM4YO+nmmjQxtN3Y5c3sRLx5
+        f3OV6VRBpuGSYXQqDQ9hDLfRnP3/Mk7Kw/Txku4g5e2YNYEBUjwXkuoZ1CWZ
+        hCwUUh5zxMEYGSw4SiIaGYImmmSlZwdS99ai70oiuNnGn80W3/332giaFSrC
+        b+H1493J/M1ytczwqhjUcMkweJWGAC+yr42wH5wBNRKUdEpK7ML2kWQXxbhM
+        MyaXeen3BGCywhUki447iAe1RMX5U4DN6mh8MDbrpTpMu7d6/dPyenKxgPlW
+        +PA7uw1wdvASxMhWKl2e8+P45fI4w6tiUMMlw+BVGgK8KILZi4pRQLMNukPF
+        KLQxpY0K3glLtyoEquWYmJJTpvKDyv1u9gkbJUsBEc8E4kIkZBUziMkQcYQx
+        wiRLpjqYurc4/VWEqbYIk9nl1Qr2DP+YHMfNd+vJ9VUxwSfbSnrrs9mmEqlr
+        CVePVrodJ3lsPh7lbg01hRouGYav0hDwxdAi3iIYHVSODprHDVqj3eDsquwV
+        g9OFmmXUJS1joVVnLI0aT8qpYjkX3wtqKlDujbTIcxJg7WUpclZoBFedSKRO
+        1ODcyqEDtftXTF/FAl6reLWssKW5avcLZU/fPV9AZJKxVdGn4ZJh2CoNAVsc
+        +a3/0db/bTQZFqNSMIGKZg4m4lHFVWpKSFZ99lN9ekkD9QI5qSnikWhksVCI
+        mMhJIlhKntdbHTTdW6K+OzVCleO6XIY4Pyzuqa9g7OPq8HJWprzWsdI4GExI
+        u6nofP7i5XW4ysVAawg1XDKMXqUh0Evs6RWqVNd2iFA9RKgaIlQMUQdwEk4g
+        SYxnFABnxKgBpZpylZ927leKj3OVQnIIhsFCQBnBIFIFVhjOJUaNz41Hu4C7
+        t6z9UTGK8fYfFbqIEu22o++Wl59+Orc3GV0VgRouGYau0hDQJYsEVxEz/sWi
+        K2ktOOGFNovBaTMuk0wWQfRsVEMBQVIrZBOst7iCq431CSJDbmkgmCQfMpM6
+        TLq3on37T8kjxnS726j1P378+o7nPhAN1WftkoFy0b0h8EihreP//P3/AFlM
+        xiZK5wAA
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:37 GMT
+- request:
+    method: put
+    uri: https://api.trello.com/1/cards/52b609e289920dca68003827
+    body:
+      encoding: US-ASCII
+      string: idList=5298f71b6146fa1b050083f0
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="99032af2186d172ed4f2c2634712fad7",
+        oauth_signature="1LosjR%2Fx2NA6yjoRnWIh6zeQrBw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673617", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673618596'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Sun, 22 Dec 2013 00:53:38 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTXWvbMBT9K0J7WSFOFNvxF/ShzcpW6MagXR/WlCFZV7GJ
+        LBVZTpaV/vdd20malzGMQffofhwdHb3SWtKCLkKRsBzCLM9DJkueZIxFWZjS
+        CRVcrqGlxSvdWt8v2IRua9jVZv0VGgHuEWHsobhuYULbTrSlq8UZpOxadOs/
+        OAbblRWUm1sPzdjpPVz2q76qR23TgPFjCveel9V7LKEf8OJra2jhXYcTZAe0
+        MJ3Wb2cd7z0f+D49I6hte8ZI4s4db/1V6ett7fdILWTzKJiHQRg+MFYsoiLK
+        pos0+0nHgZixcitz/J8+gyd72zmiHADZ1m3HNdlZt1Ha7gj3pNlPr7t2f1cr
+        mJaWPH+svH8pZjPEBeJ6xC+ODZcVN2sgBrUktSE3W3D9ekoe4LcnFTiEW6Ks
+        Iw4URqYEYo3eT/vi7xp4C6Rrewx/RXwFmKyRC14T0bXZtMRb0iLXYQulGmYV
+        x/nfMBDWbsitLIhUCed470EKEoJYxHGQ51ESyCQGlpQpE+H8WDQUiDLjTCZ5
+        kIOMg1gJFgjFZCCVStMoEjxli5N0d8imJ/OIJprdyPogpN0ZgsfjpK24AznQ
+        GxidyXGQsUUdd7vdFI4qoV9mX2wDU172tvhgLsmKjh/x3K3BX67oL6G52SBy
+        cX6Th/v9xD0fLXTmpgk+jmvL3fhC8kylc5HM40TxuWALxrIIBO2TBu/quvUH
+        u9XyDoN/Vik2VI3P51RyX1mHNYs06qOrk+uXFo95JNRwg04boPeMk681F6AP
+        DQ1v8Bh0aY3HFBLhyBeLe3E+X4T4TvtpP5zGlKOk3gE6ZhCznAn7VW3LdI1l
+        3f+zZsg6KMdRQUTf/gIP74mhVwQAAA==
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:38 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/52b609e1996e8ebd5000325d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="b58230d6e8f4776167a5d987d8d40d38",
+        oauth_signature="%2BFAqWZwL4ZGrr5WLW687XRystUI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673618", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673618970'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Content-Length:
+      - '115'
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 22 Dec 2013 00:53:38 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":"52b609e1996e8ebd5000325d","name":"Title sync","closed":false,"idBoard":"5298f71b6146fa1b050083eb","pos":128}'
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:38 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/lists/52b609e1996e8ebd5000325d/cards?closed=false&filter=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="2e05459e5b31a60bd451d2587d92ef5c",
+        oauth_signature="k88VCNZNCtLDUIFn%2FyULgaS5L3M%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673618", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673619357'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Etag:
+      - '"1253312372"'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Sun, 22 Dec 2013 00:53:39 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA+2da3PbRrKG/wpX+yFJlYea+8VVW6csx9eV7NiO7dhJ6tRc
+        JUoUKZOUZGUr//00SOJiIDkLlPBxKrEtQmgS7B48mG686Pn1PwezcPDwQFAn
+        sYmUmUBYNJZRjC2V7ODBgT+L/uLFJl6+29hNXB88/PV32DhfriMYJjtfxwcH
+        AX5zbNebR34zu5lt7uAdKSYMEYoo+ZmSh0w+ZHwqqfwM7xji2sMev61+W5R/
+        fn0WN5O75fVqklYxTm5m62s7n9wuVxdpvryd2M3k8m56dL2+O56lOPXLye/f
+        n202Vw8PD2G7g+3z3fYfyjd8fGYXp3GyWG7iZLaYPLmJq+Ln6eTn+HUzOYsr
+        2LyepOVqsooJXi18nCwX87tpYfzTPNp1nFyvi23wJ002ZxF2nsOxzBank/ls
+        cbGebJaTNRzr9lfX8/n2sx6Wn/8KXrjl8mLyIjychCStdTYgFUNE3HGOjGES
+        Bckjll5hR0lptDXgxkfCGEZchYB4wBFpFjTyjltKg02wpXLdMRxNcTAfZvH2
+        8EmY7R25vF1M4OvZyfrMrmLYHt72iBru2LtxDX68vb2dxtJLfnl5+Hx5GacW
+        Arpc/HPxr8lvB7v/Jhu7Oo2bf/128L9ubhcXsOWHZiT38f3RbuzBwwX45QGM
+        sKOlXe2GmdFJEScJl8kShwXGmkV3UOx0PFtv6qFIjJFRRxdgF8yoCNt9TuKl
+        i6v1BzjIsBuJs/DubLkCQ6Fo8erRZmP92WVcbB4v4euUx3BpFzCitpvqParx
+        u7CXET768XKxgc0TCp91tYShzqiS+sHBuviEws2wz/Jq88vi6ukMdoGInhYn
+        xH8ObpbbMwM/OLiBIMAQ2R3n/jD3H7K+dmu/mrnGprQ8ddenf8DbNk+03TvV
+        Lx8XPxVWxdblZXHku11s9U12rwvHr2ZXRcgOHm5W18WZeR13Lviz8XPhp+2b
+        zsHl69KPe9/uXs6ti/P9z9uv/341h8MsR8tmFeFk2I4Tf9hwyV98x+v/bngI
+        sUN+53xED/588C2VWHJWSwHDxWFMYwpjUklMFRWZSn2oRGA/Q1hC2GiBOIAI
+        AYkiclpEJ5V1mMtMpTaVxFhUEiWVNDEUf0ulV6vz9cXn5yFTqYJLwyXDqFQa
+        ApVERSXRoRI3KngnYJaki7mSimNSSU4JZplKfaiEBdGccIKUZwaopA0AiSfk
+        4W0M0dZgqjOV2lSSY1FJllQymmH+LZU+h82Pmy9vVaZSBZeGS4ZRqTQEKsmK
+        SrJLpVYGJ8alkhY5g+tFJY01dcZ4pKy1iAvukSOOwF/YRTipjeUkU6lNJT0W
+        lXRJJcIILhLDJpYuP168Wbx78zhjqaJLwyXDsFQaApZ0hSXdwZJI2hBnBQEq
+        YeOTGxNLakp5TuF6Ycni4GS0GGkJf3EtE3I0EeR1It5qRoS3GUttLJmxsGQq
+        LHHFhfwWS6/fXi5PT6TPWKro0nDJMCyVhoAlU2HJdLFknXKSObvFUqRkXCwJ
+        ozOW+mBJMk2cxwqlZBPiXnDkcMDIkoAp/CUpNhlLLSxpPBaWCK64BJHgrdrS
+        2dXivXqTudTAS8Mlw7hUGh5C9Cougfs7YAoc20AZhv+xEHrU4pKaGoUzmPqA
+        SSibomQGEdgDDAJBhmoKnKLaJkwTTrm41AETGQ1MpAKTxpS2yktPr44ffbk5
+        khlMFV8aLhkGptIQwERqMJEOmGT0mFDmiYApk3R2VDDpKWcqg6lXfcnKpGmM
+        sIeGGZMhMFkS1CIhrYxUYC5dvhfXAdNoCgFSSQSIkRK3NAJvHz/6dPWMX2cw
+        VXxpuGQYmEpDAFOtESBdkYDULhKqYsQWY+qDHBdMypAMpj5gopor6rhC2uqA
+        uDUGwKQoMklriRXWkJFnMLXBxEYDEyvBRAk1plX5Po2UnF8fPctgqvjScMkw
+        MJWGACZWg4l1wKS4tRgSrlTUmCz3akwwmSmRufTdb8bko0pwiUBhq6nEliEH
+        s1jkAhMKrhdeRZ/B1AYTHw1MvAITNUy1at+SPv8szu9yKlfzpeGSYWAqDQFM
+        vAYT74JJEC0IhtSBFMVvMzKYJMtg6idg4jYRaSDtlskjzsDUKWmQiELLQKKU
+        Ot+T64BpNFklqXSVlAslW8Xvm6+fxPzm1dsMpoovDZcMA1NpCGCqhZWkq6zU
+        ytNIIotSAZgSGxNMHE8xy6lcvxmTwYRYyhGnSiGumUBGRYyE4DQy711QWcPU
+        AdNoykpSSSuppIS3it/hZH3+wZ08zWCq+NJwyTAwlYYAplpbSbriSv3NgygJ
+        43HBJGgGU78aUzLcKUIQXEgk0AnyOUuVRiFqqhWOxmKewdQGkxoNTKoCk9KC
+        torfV5bbj1/O/53BVPGl4ZJhYCoNAUyqBpPqgskyooKXejtjctqPCyYjslyg
+        F5iSClZ4FZDwRY1JRYWc0BFZpqKIwVPKXAZTG0yjqb5JJfumhhvSKn7Pb9zr
+        zdHTLxlMFV8aLhkGptIQwFTLvklX922wd3DycLYtfpPExwQTmTJMM5h6NRTg
+        XngTMNLWQypHBKRyOggkiwqgjiQImXVMHTCNpvumlcCSEUJNq/j95ePFs/Th
+        +XkGU8WXhkuGgak0BDDVwm/aFVja1oxpTB0Tp1PCs/K7F5iYMNhySlCC5Bpx
+        SNyQoywiOKNliCQRblIGUwtMZjSBJa1bnXCOZbvGhN9e3upfFhlMdamodsnA
+        GtPe8FCYWmBJuzomSzTGiSZcTJlMCnZcMOl8V64nmIxS2huG4PwkiAepkQuW
+        ICNMFN4zK01O5TpgGq8FU6VjYhJz3qoxsaPn52JzfpfBVPGl4ZJhYCoNAUyN
+        JkxdHZOLJjIclJYJRoOlekwwsSlcfzKY+oApJumKXyKFlQQDq5HmmCGssKfC
+        GeJpVn53wDSawJJWOiampGatGpN4e3a5kvPXGUwVXxouGQam0hDAVAssaVfH
+        5IwjwXkZilSOaWrGBZPKxe+eOiYZo8DWIxMh9+bKJmS09zDJlSwEIoLMNaYu
+        mEYTWNJKx8QMo6RVY/pMsT35GT/PYKo7KtUuGdiKaW8IYKoFlrSrY/JcJaeZ
+        xQyGA2MqjQkmPqXSZDD16lsZUtBYYsQ0BjBxFQBRyiADqTYhnlMwymBqg2k0
+        gSWtdEwcG4nbAssPX96bp3/kzpUNnWTtkoECy70hgKkWWNKujikyOINkonsd
+        UxyzGxOXU0JzKtcvlQsyGAFgwsGRQvlNkHbUI59css4T5WOeMXXANNpdOVbd
+        leNKENaaMa3j6cn7s084g6niS8Mlw8BUGgKY6rtyrHtXLgYFORwGpsgilZN0
+        XDAJk7tX9gKTg2kRtYYinYrulUqCgU3gz6AjViZZw1kG07dg2s5sRgJT1faE
+        m6LRRqvtyTE1L39eZzA1upfULhnY9mRveAjRq8HUbXuSCIVrMZGM4aK7gBq1
+        +K2m1OQaU79+TEwYxyhFFnuHuMAJOYgN0t5Rx5LDiueHeDtgGk0uwCq5gIDL
+        QLvd99Hzz89e45dvMpgqvjRcMgxMpSGAqZYLsK5cICkP8AhSFWCyFI8MJqmz
+        jqnfIymBQTAcRslTMEhaIkjgDNLECRPkVuWUwdQG02hyAVbJBQTlVLfkAs8e
+        vbp78+lVrjHVfGm4ZBiYSkMAUy0XYB25QMLEaicsZA2iAJMes7Uu11OKs46p
+        X/GbJWWUVQgnpwFMVCIbhUHYEiOdpjTxvJRcB0yjyQVYJRcQHMv2SgSvnj47
+        PXrx9SSDqV59qXbJwGWb9oYAplouwDpygYQNlzIqwYoak5VsVOW3niqW123q
+        BaZAvfMWwBQj8YhrQ5AVVkIqx4PRWkTqaAZTG0yjyQVYJRcQQuH2WgSfXsmT
+        R8fiUwZTxZeGS4aBqTQEMNVyAdaRC6SizT0MB+1FwNhYMSqYzJTg3Fq3n/Jb
+        8RAI90gnbBFnJCDNdUIqKOeIDtKxLBfogGm8fkzVIilCFQ+lfAumf7+NNx//
+        UCaDqeJLwyXDwFQaApga/Zg6q6QAmIQPTnMuTfFICh9z/V0AE9f5rly/7gKS
+        yUi0Kp5BCYh7HJH12iPnhPZOW7hkhAymNpju3Y9pDV95sj89KjRpo9vLEdy8
+        P/7px5d3JKOpFiTVLhmoZNobApokKgJQ8ukv4MS45gbGRbEMLx43nTNTQ3KH
+        gX4ryxnFeeIJRR9s0WEAMAW4QkSI5B2BKW3IcOrA6d49mT6uZtvhMtvMYPTN
+        4Bw5XdnCARMY+HAG73kFpxFtr1Jw/ubJ7fmHd39kXlXYabhkGK9KQ+CVQrdF
+        TNA+JqgRE7SLSRthtCXHHBNhAk9ZLpX3FBcEAkflCQqEqsJAIl2s+OSpgkD5
+        WJSkMsLaCLt396at/yvFk6RUtJctCC/Cu1/So0eZVHU7gdolA/sQ7A2BVBoV
+        ww511E6Jfvvgyqj37gBIKj/q21MfbiSm0bOi7a5BRdNdZHwySEewMBjSdp7n
+        VB0g3VsfvvV/pXSSTJv2cgWLm0sSTs5zY5SaKw2XDANSaQhAMjsgdVROicUo
+        HQ48FUsVaBj6YwKJTAnN9+z6tZEjghgnHaIxSUjyDBg44ZFjXhgTVNHgMgOp
+        BSRyb134DkjfF9nDZOF+qMgkBGuvV3D54eLJxerIZTJVgGm4ZBiZSsNDCOGe
+        TNsMDi1cl1CU6AjhsFuBeFRjNiEAQgmSc7h+TQi890ISiWCAcMQ19chGI5Az
+        KhFuJbM037zrEOreAvFdDtcllCKqvXDBE/nq4uVr9y4TqgJNwyXDCFUaAqHI
+        Ppn7e0IRLyML2rOEsXWcjUsoQ3M3gn7P1jlv4cpNkdZYFSv3EmAVUcgEIU2k
+        Ec7avKpKh1D3Voqf3EFE/XIRJmu7CG75deu078PlcrkCnwtcQ0tr0l7U4MlP
+        K/H+sTnK0KrZU7tkILT2hgAtii7v0C4saB+WHcbqsHQ4xgPHVlGjCpmUEHrM
+        luKCThnJj+L1m2kVj0NaBfOrVDTIdMEXS/5qxIjmTGqqDMWZY22O3VtYDhxL
+        sxVMs/4GY9MSYwpz0V4C4fWzt/Hm7DI/OlzTqOGSYRgrDQFjrMDYNir9KQbJ
+        CNNBma3Y07ExNVVAMYXzUlL9NFWBSPiNQykyMICBA7Mxw8CqWEtekAhXmkyx
+        NsXurULfVbQm31/aOxcn7H+qyZeiWLfXR3i5DO/445gnXzV8Gi4ZRq3SEKjF
+        y5rWNgio+wif8Fobq1WAcwcTIsdcVUqwKc796/oxysCUKkqhkGSJIZ4czLSI
+        VEh4zolKRGuVdQkdRt1bkL6raU2+DzEVWp44v5uQmlNMUd2qvZMPL54/OeV5
+        5bsaNw2XDONUaQicEmVlqw7EX2gWxLc6UD5m6yiAFZxpGVa9JlRcCROwQxxH
+        VuhADTJcKaQAXirQVFQiM6zasLq3SP3jDAbDCn6uJJ9KMNle0GVzcn22eP7k
+        ayZUBZqGS4YRqjQ8LO423dbu74CJY7iAE73t0GLYuPUqNtUi3xnsJ1AnPlBm
+        BRIpmCLTc0h7qpBVxmGvBXYqd2jpgOneAvVHtzAyIJJ30Z5VaFIYt5d0Of5y
+        vkqLi48ZTRVhGi4ZhqbSENAE4/sWFQFA2wC04SRlooETIwo4MR9HnTXxKc03
+        BXveFPQ2yaKbHXWxKKZjjKyjHAUtJbYhWm9zM4QOnEaQnrcf7FNa8vaiLvbF
+        ydGHu9OsqaoJ03DJMDSVhoCmQn7+t4/1SZUIxca5YuFgk+yotSc+lTg/c9wL
+        TBoHoYOlKAqFETdMIUMNR4QEHIBLFBLvDKY2mO4tQf/x+mo+8zCWSy5pTHV7
+        TRdze/b50c/zeeZShZeGS4ZxqTQELhkUKu93sMQp5djByUIAS4GNKqISU5wf
+        1evZPIoAirzygCUHyRxMnZAjkiDKhWPMep1ini+1sUTvLUR/DmeMnXRrTZoY
+        2l7Y5c3sRLx5f3OV6VRBpuGSYXQqDQ8hhttszv5/FSflYfh4SXeQ8nbMnsAA
+        KZ4bSfVM6pJMQhYKKY854mCMDBYcJRGNDEETTbLSswOpe2vRdy0R3Gzjz2aL
+        7/57bwTNChXht/D68e5k/ma5WmZ4VQxquGQYvEpDgBfZ90bYB2dAjwQlnZIS
+        u7B9JNlFMS7TjMltXvo9AZiscAXJouMO8kEtUXH+FGCzOhofjM16qQ7T7q1e
+        /7S8nlwsYLwVPvzObhOcHbwEMbJVSpfn/Dh+uTzO8KoY1HDJMHiVhgAvimD0
+        oiIKaLZBd6iIQhtT2qjgnbB0q0KgWo6JKTllKj+o3O9mn7BRshQQ8UwgLkRC
+        VjGDmAwRR4gRJlky1cHUvcXpryIMtUWYzC6vVrBn+MfkOG6+W0+ur4oBPtl2
+        0lufzTaVSF1LuHq0yu04yWPz8Siv1lBTqOGSYfgqDQFfDC3iLYLooDI6aB43
+        aI12wdl12SuC04WaZdQlLWOhVWcsjZpPyqliuRbfC2oqUO6NtMhzEmDuZSly
+        VmgEV51IpE7U4LyUQwdq9++YvooFvFbxallhS3PVXi+UPX33fAGZScZWRZ+G
+        S4ZhqzQEbHHkt/5HW/+30WRYjErBACoWczARjyquUlNCsuqzn+rTSxqoF8hJ
+        TRGPRCOLhULERE4SwVLyPN/qoOneEvXdqRGqGtflMsT5YXFPfQWxj6vDy1lZ
+        8lrHSuNgMCHtRUXn8xcvr8NVbgZaQ6jhkmH0Kg2BXmJPr1CVurYhQnWIUBUi
+        VISoAzgJJ5AkxjMKgDNi1IRSTbnKTzv3a8XHuUohOQRhsJBQRjCIVIEVhnOJ
+        UePzwqNdwN1b1v6oiGK8/UeFLqJEe9nRd8vLTz+d25uMropADZcMQ1dpCOiS
+        RYGryBn/YtKVtBac8EKbxeC0GZdJJosgei5UQwFBUitkE8y3uIKrjfUJMkNu
+        aSCYJB8ykzpMureifftPySPGdHu1Uet//Pj1Hc/rQDRUn7VLBspF94bAI4W2
+        jv/z9/8DdAe0SrTiAAA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:39 GMT
+- request:
+    method: get
+    uri: https://api.trello.com/1/cards/52b609e289920dca68003827
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="71918e99122c43334775efac32736f03",
+        oauth_signature="7HFwZG3hmOzouQjfedic89QKXfg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673619", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673619810'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Etag:
+      - '"-1584795889"'
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Sun, 22 Dec 2013 00:53:39 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTXWvbMBT9K0J7WSFOFNvxF/ShzcpW6MagXR/WlCFZV7GJ
+        LBVZTpaV/vdd20malzGMQffofhwdHb3SWtKCLkKRsBzCLM9DJkueZIxFWZjS
+        CRVcrqGlxSvdWt8v2IRua9jVZv0VGgHuEWHsobhuYULbTrSlq8UZpOxadOs/
+        OAbblRWUm1sPzdjpPVz2q76qR23TgPFjCveel9V7LKEf8OJra2jhXYcTZAe0
+        MJ3Wb2cd7z0f+D49I6hte8ZI4s4db/1V6ett7fdILWTzKJiHQRg+MFYsoiLK
+        pos0+0nHgZixcitz/J8+gyd72zmiHADZ1m3HNdlZt1Ha7gj3pNlPr7t2f1cr
+        mJaWPH+svH8pZjPEBeJ6xC+ODZcVN2sgBrUktSE3W3D9ekoe4LcnFTiEW6Ks
+        Iw4URqYEYo3eT/vi7xp4C6Rrewx/RXwFmKyRC14T0bXZtMRb0iLXYQulGmYV
+        x/nfMBDWbsitLIhUCed470EKEoJYxHGQ51ESyCQGlpQpE+H8WDQUiDLjTCZ5
+        kIOMg1gJFgjFZCCVStMoEjxli5N0d8imJ/OIJprdyPogpN0ZgsfjpK24AznQ
+        GxidyXGQsUUdd7vdFI4qoV9mX2wDU172tvhgLsmKjh/x3K3BX67oL6G52SBy
+        cX6Th/v9xD0fLXTmpgk+jmvL3fhC8kylc5HM40TxuWALxrIIBO2TBu/quvUH
+        u9XyDoN/Vik2VI3P51RyX1mHNYs06qOrk+uXFo95JNRwg04boPeMk681F6AP
+        DQ1v8Bh0aY3HFBLhyBeLe3E+X4T4TvtpP5zGlKOk3gE6ZhCznAn7VW3LdI1l
+        3f+zZsg6KMdRQUTf/gIP74mhVwQAAA==
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:39 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAxjaGVja1ZlcnNpb24AAAAACwABAAAACEVEQU1UZXN0BgACAAEG
+        AAMAGQA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '29'
+      Date:
+      - Sun, 22 Dec 2013 00:53:39 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAxjaGVja1ZlcnNpb24AAAAAAgAAAQA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:40 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAX1M9czE6VT03MzYy
+        ZTpFPTE0ODAzYjVkOWQ0OkM9MTQwYWMwNGFkZDc6UD0xODU6QT14cnMxMTMz
+        OlY9MjpIPTgzMjZhYTUzN2U2ODhkMGMzZGYwYjVlOTNhZDZhOTdlAA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '82'
+      Date:
+      - Sun, 22 Dec 2013 00:53:41 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:41 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAdnZXROb3RlAAAAAAsAAQAAAF9TPXMxOlU9NzM2MmU6RT0xNDgw
+        M2I1ZDlkNDpDPTE0MGFjMDRhZGQ3OlA9MTg1OkE9eHJzMTEzMzpWPTI6SD04
+        MzI2YWE1MzdlNjg4ZDBjM2RmMGI1ZTkzYWQ2YTk3ZQsAAgAAACRiYzhhMGQ2
+        OS05ZWQ0LTRmYjAtYmYwZC1kZmY3NzMzYmE3MDUCAAMAAgAEAAIABQACAAYA
+        AA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '221'
+      Date:
+      - Sun, 22 Dec 2013 00:53:41 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAdnZXROb3RlAAAAAAwAAAsAAQAAACRiYzhhMGQ2OS05ZWQ0LTRm
+        YjAtYmYwZC1kZmY3NzMzYmE3MDULAAIAAAAJQ29udGVudCAzCwAEAAAAEN4L
+        o1yuLBQBm7slggyc3h4IAAUAAACZCgAGAAABQUt/lzgKAAcAAAFBS3/44AIA
+        CQEIAAoAAAMMCwALAAAAJGRmNmFhYmFkLTdlZGUtNGI0NC05OTM2LWQ2NGUw
+        NmM3MGIyMQwADgsADQAAAApkbW9vcmU1MDUwCgARAAABQUuMSTgAAAA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:41 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAxjaGVja1ZlcnNpb24AAAAACwABAAAACEVEQU1UZXN0BgACAAEG
+        AAMAGQA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '29'
+      Date:
+      - Sun, 22 Dec 2013 00:53:42 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAxjaGVja1ZlcnNpb24AAAAAAgAAAQA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:42 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAX1M9czE6VT03MzYy
+        ZTpFPTE0ODAzYjVkOWQ0OkM9MTQwYWMwNGFkZDc6UD0xODU6QT14cnMxMTMz
+        OlY9MjpIPTgzMjZhYTUzN2U2ODhkMGMzZGYwYjVlOTNhZDZhOTdlAA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '82'
+      Date:
+      - Sun, 22 Dec 2013 00:53:42 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:42 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAAp1cGRhdGVOb3RlAAAAAAsAAQAAAF9TPXMxOlU9NzM2MmU6RT0x
+        NDgwM2I1ZDlkNDpDPTE0MGFjMDRhZGQ3OlA9MTg1OkE9eHJzMTEzMzpWPTI6
+        SD04MzI2YWE1MzdlNjg4ZDBjM2RmMGI1ZTkzYWQ2YTk3ZQwAAgsAAQAAACRi
+        YzhhMGQ2OS05ZWQ0LTRmYjAtYmYwZC1kZmY3NzMzYmE3MDULAAIAAAAJQ29u
+        dGVudCAzCwAEAAAAEN4Lo1yuLBQBm7slggyc3h4IAAUAAACZCgAGAAABQUt/
+        lzgKAAcAAAFBS3/44AIACQEIAAoAAAMMCwALAAAAJDg2NGJiNGE2LWZhNjAt
+        NGVjOC05OWI1LTc3YjdmZWM5NjkzMAwADgsADQAAAApkbW9vcmU1MDUwCgAR
+        AAABQUuMSTgAAAA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - xrs1133 / 0.2.2; Ruby / 2.0.0;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '224'
+      Date:
+      - Sun, 22 Dec 2013 00:53:43 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAAp1cGRhdGVOb3RlAAAAAAwAAAsAAQAAACRiYzhhMGQ2OS05ZWQ0
+        LTRmYjAtYmYwZC1kZmY3NzMzYmE3MDULAAIAAAAJQ29udGVudCAzCwAEAAAA
+        EN4Lo1yuLBQBm7slggyc3h4IAAUAAACZCgAGAAABQUt/lzgKAAcAAAFBS3/4
+        4AIACQEIAAoAAA4PCwALAAAAJDg2NGJiNGE2LWZhNjAtNGVjOC05OWI1LTc3
+        YjdmZWM5NjkzMAwADgsADQAAAApkbW9vcmU1MDUwCgARAAABQUuMSTgAAAA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:43 GMT
+- request:
+    method: put
+    uri: https://api.trello.com/1/cards/52b609e289920dca68003827
+    body:
+      encoding: US-ASCII
+      string: desc=%0D%0A%0D%0A%0D%0A%5BGet%20your%20free%20visual%20workflow%20at%20my.BusyLife.co%20%5D(http%3A%2F%2Fmy.busylife.co)%0D%0A%0D%0AChange%20note%20in%20Evernote.%20Text%20here%20is%20for%20reference%20only.%0D%0APlease%20use%20one%20of%20the%20following%20links%20to%20see%20the%20full%20note%3A%0D%0A%0D%0ANotebook%20Id%3A%20864bb4a6-fa60-4ec8-99b5-77b7fec96930%0D%0ANote%20Id%3A%20bc8a0d69-9ed4-4fb0-bf0d-dff7733ba705%0D%0A%0D%0A%5BLink%20to%20View%2FEdit%20your%20own%20or%20a%20shared%20notebook%20in%20Evernote%20%5D(https%3A%2F%2Fwww.evernote.com%2FHome.action%23n%3D%20%22%22%22%22%20target%3D%22_blank%22%20)%0D%0A%0D%0A%0D%0A
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - OAuth oauth_consumer_key="f254c01ab928b3aa6e9dc8e6084a8b43", oauth_nonce="50e0d790461dd7ecb039bd550e1d7380",
+        oauth_signature="YteiK6zsXT%2BLvP2IYTCRusItDaM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1387673623", oauth_token="ed2b32908df46be87e38c75f37c948aee71067bd4ebe434125326c354aca0d04",
+        oauth_version="1.0"
+      Content-Length:
+      - '635'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - DENY
+      X-Server-Time:
+      - '1387673624023'
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Vary:
+      - Accept-Encoding
+      Content-Encoding:
+      - gzip
+      Date:
+      - Sun, 22 Dec 2013 00:53:44 GMT
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA4VTXWvbMBT9K0J7WSFOFDvxF/ShzcpWaMegXR/WlCHZV7EX
+        WSqSnCwr+e+7tpM0L2MYg+7R/Tg6OnqjdUlzOg9FzDII0ywLWVnwOGUsSsOE
+        jqjg5Qoczd/oxvhuwUZ0U8O21qt7aATYJ4Sxh+TKwYi6VrjC1uIMkmYl2tUf
+        HIPtigqK9a2HZuj0Hi66VVfVoaZpQPshhXvPi+o9LqEb8Opro2nubYsTyhZo
+        rlul9mcdHzzv+T6/IKiMO2NU4s4dd/6q8PWm9jukFrJpFEzDIAwfGcvnUT6L
+        xlmW/aDDQMxY2qU+/s+fwZOdaS2RFoBsatdyRbbGrqUyW8I9aXbj69bt7moJ
+        48KQl4+V96/5ZIK4QFwN+MWx4aLiegVEo5ak1uRmA7Zbj8kj/PakAouwI9JY
+        YkFipAsgRqvduCv+poA7IK3rMPwl8RVgskIueE1E1XrtiDfEIdd+C6XqZ+XH
+        +V8xEMasyW2ZkzSeCTHjcSB5zIIZFGmQZWIeJIlIJBRZnEXsWNQXiCLlrIyz
+        IINyFsykYIGQrAxKKZMkigRP2Pwk3R2y6cg8oYkmN2V9ENJsNcHjceIqbqHs
+        6fWMzuQ4yOhQx+12O4ajSuiXyRfTwJgXnS0+6EuypMNHPLcr8JdL+lMorteI
+        XJzf5OF+P3HPO49DY37VuNjvz1w1wkdybbgdXkqWymQq4ukslnwq2JyxNAJB
+        u6Tew6p2/mC7urzD4J9VkvVVwzM6lTxUxmLNPIm66Ork/oXB4x4JNVyj43ro
+        PePkb8UFqENDzRs8Bl0Y7TGFRDjy1eDeLJvOQ3yv3bTvVmHKUVpvAZ3Ti1pM
+        hLmXmyJZYVn7/6wJsg6KYVQQ0f1fxWStUV8EAAA=
+    http_version: 
+  recorded_at: Sun, 22 Dec 2013 00:53:43 GMT
+recorded_with: VCR 2.8.0

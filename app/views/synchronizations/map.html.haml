@@ -1,0 +1,20 @@
+%h2 Map lanes to Notebooks
+
+= simple_form_for nbbs[0], :url => edit_synchronization_path(nbbs[0]), :method => :get  do |f|
+  - nbbs.each_with_index do | nbb, i |
+    = f.input :list_id,
+        collection: board_lists.map{ |l| [ l[:name], "#{l[:id]}|#{l[:name]}|#{nbb.id}|#{notebook_set[i].guid}" ] },
+        label: "#{notebook_set[i].name}:",
+        input_html: { multiple: false, size: 0, name: "notebook_board[list_id][#{i}]" },
+        include_blank: false,
+        prompt: "---Create New---",
+        wrapper_html: { class: 'map_select' },
+        required: true
+    .map_alert= flash[:list_validation] if flash[:list_validation]
+    - unless nbb.share_flag
+      = f.input :share_flag,
+          label: false,
+          inline_label: 'Check to generate Evernote share links within card descriptions.'
+    = f.input :notebook_id, as: :hidden, input_html: { value: "#{notebook_set[i].name}|#{board_match.guid}|#{nbb.id}|#{notebook_set[i].guid}", name: "new_list_params[#{i}]" }
+    %br
+  = f.button :submit, "Submit", :class => 'map_btn'
