@@ -8,6 +8,12 @@ set :user, "bl_deployer"
 set :rails_env, "production"
 set :deploy_via, :copy
 
+set :rbenv_ruby, '2.0.0-p353'
+set :rbenv_type, :user
+set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+set :rbenv_roles, :all
+
 # set :format, :pretty
 # set :log_level, :debug
 # set :pty, true
@@ -25,23 +31,6 @@ namespace :deploy do
     on roles(:app) do
       execute :mkdir, "#{current_path}/tmp"
       execute :touch, "#{current_path}/tmp/restart.txt"
-    end
-  end
-
-  [:start, :stop].each do |t|
-    desc "#{t} task isn't needed for Passenger"
-    role :app, %{bl_deployer@mylifebook.com}
-    task t do
-      # nothing
-    end
-  end
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
     end
   end
 

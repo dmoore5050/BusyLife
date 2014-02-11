@@ -42,7 +42,7 @@ describe List, 'instance' do
     its(:name)     { should eq name }
     its(:board_id) { should eq board.id }
     its(:contents) { should be_a_kind_of String }
-    its(:contents) { should include "{\"content\"=>\"name\", \"guid\"=>\"5293aba0d70e12104100515e\"}" }
+    its(:contents) { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"}" }
   end
 
   describe List, '#set_content_string' do
@@ -54,13 +54,13 @@ describe List, 'instance' do
 
     subject do
       VCR.use_cassette('List create_populated_list') do
-        list.set_content_string trello_client
+        list.set_content_string trello_client, nil
         list.contents
       end
     end
 
     it { should be_a_kind_of String }
-    it { should include "{\"content\"=>\"Write initial integration tests\", \"guid\"=>\"51d6d149d76b67b553005c7b\"}" }
+    it { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"}" }
   end
 
   describe List, '.set_webhook_attr' do

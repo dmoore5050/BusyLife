@@ -7,4 +7,11 @@ FactoryGirl.define do
     association :board, factory: :board
   end
 
+  factory :list2, class: List do
+    guid        '52f005219366c5002d9c2bc9'
+    name        'Another List Name'
+    contents    "[{\"content\"=>\"name\", \"guid\"=>\"guid\"}]"
+    association :board, factory: :board
+  end
+
 end

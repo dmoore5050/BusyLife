@@ -7,6 +7,7 @@ describe NotebookBoard, 'columns' do
   it { should have_db_column :user_id }
   it { should have_db_column :compiled_update_times }
   it { should have_db_column :share_flag }
+  it { should have_db_column :in_progress }
 end
 
 describe NotebookBoard, 'validations' do
@@ -62,10 +63,10 @@ end
 describe NotebookBoard, '.validate_records' do
   it 'should delete any records with no list_id' do
     NotebookBoard.create(notebook_id: 1, board_id: 1, user_id: 1)
-    notebooks_no_list = NotebookBoard.where(list_id: nil).all
+    notebooks_no_list = NotebookBoard.where(list_id: nil).to_a
     notebooks_no_list.length.should eq 1
     NotebookBoard.validate_records
-    new_list = NotebookBoard.where(list_id: nil).all
+    new_list = NotebookBoard.where(list_id: nil).to_a
     new_list.length.should eq 0
   end
 

@@ -28,12 +28,12 @@ class User < ActiveRecord::Base
   def redirect_path
     providers = authentications.map(&:provider)
 
-    if providers.include? "evernote" && "trello"
+    if providers.include? 'evernote' && 'trello'
       return '/synchronizations/new'
-    elsif providers.include? "evernote"
-      return path "trello"
+    elsif providers.include? 'evernote'
+      return path 'trello'
     else
-      return path "evernote"
+      return path 'evernote'
     end
   end
 

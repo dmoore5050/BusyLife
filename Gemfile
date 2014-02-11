@@ -1,45 +1,39 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2.13'
-gem 'rack', '~> 1.4.5'
+gem 'rails', '~> 4.0.2'
+gem 'rack', '~> 1.5.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'nokogiri'
 gem 'pg'
+gem 'protected_attributes'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'compass-rails'
-  gem 'uglifier'
-  gem 'therubyracer'
-end
+gem 'sass-rails',   "~> 4.0.1"
+gem 'coffee-rails', "~> 4.0.1"
+gem 'uglifier'
+gem 'therubyracer'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'haml'
-gem 'simple_form'
+gem 'simple_form', "~> 3.0.1"
 
-gem 'devise', '2.2.0'
+gem 'devise', '~> 3.2.2'
 gem 'omniauth-evernote'
 gem 'evernote_oauth'
 gem 'omniauth-trello'
-gem 'ruby-trello'
+gem 'ruby-trello', :git => 'git://github.com/jeremytregunna/ruby-trello.git'
 
 gem 'passenger'
-gem 'capistrano',  '~> 3.0.0'
+gem 'capistrano',        '~> 3.1'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano-bundler'
+gem 'capistrano-rails', '~> 1.1'
 gem 'pry-rails'
 gem 'foreman'
-gem 'render_anywhere', :require => false
 gem 'resque', :require => 'resque/server'
-
-group :development do
-  gem 'capistrano-rails', '~> 1.0.0'
-end
 
 group :development, :test do
   # bundler requires these gems in development
@@ -62,8 +56,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'shoulda', '~> 3.0.beta'
   gem 'vcr'
-  gem 'webmock', '~> 1.8.0'
-  gem 'mockingbird', '~> 0.1.1' # twitter streaming API mocking
+  gem 'webmock',      '~> 1.8.0'
   gem 'launchy'
   gem 'timecop'
   gem 'database_cleaner'

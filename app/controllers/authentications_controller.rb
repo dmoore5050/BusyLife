@@ -18,6 +18,10 @@ class AuthenticationsController < ApplicationController
   def failure
   end
 
+  def reauthenticate
+    @provider = params[:provider]
+  end
+
   private
 
   def oauth_handle omni

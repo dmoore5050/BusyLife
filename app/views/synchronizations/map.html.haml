@@ -1,6 +1,6 @@
 %h2 Map lanes to Notebooks
 
-= simple_form_for nbbs[0], :url => edit_synchronization_path(nbbs[0]), :method => :get  do |f|
+= simple_form_for nbbs[0], :url => synchronizations_path, :method => :post  do |f|
   - nbbs.each_with_index do | nbb, i |
     = f.input :list_id,
         collection: board_lists.map{ |l| [ l[:name], "#{l[:id]}|#{l[:name]}|#{nbb.id}|#{notebook_set[i].guid}" ] },

@@ -149,7 +149,7 @@ describe EvernoteClient, 'instance' do
     end
 
     it { should be_a_kind_of Array }
-    its(:length) { should eq 54 }
+    its(:length) { should eq 61 }
     its(:first)  { should be_a_kind_of Hash }
     its(:first)  { should have_key 'content' }
     its(:first)  { should have_key 'guid' }
@@ -172,7 +172,7 @@ describe EvernoteClient, 'instance' do
       end
 
       it { should be_a_kind_of Array }
-      its(:first)  { should be_a_kind_of Evernote::EDAM::Type::Note }
+      its(:first)  { should be_a_kind_of Evernote::EDAM::NoteStore::NoteMetadata }
       its(:length) { should eq 39 }
     end
 

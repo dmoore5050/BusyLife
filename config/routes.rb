@@ -6,18 +6,23 @@ Busylife::Application.routes.draw do
   end
 
   root to: 'authentications#index'
+  namespace :authentications do
+    get 'reauthenticate'
+  end
 
-  resource :notebooks, only: [:create, :update, :destroy]
-  resource :notebook_boards, only: [:destroy]
-  resources :synchronizations do
+  resources :synchronizations, except: [:index, :show] do
     collection do
+      post 'prepare'
       post 'trello_listener'
       get  'trello_listener'
       get  'evernote_listener'
-      get  'pingdom_listener'
       get  'map'
     end
   end
 
-  mount Resque::Server => '/resque'
+  %w( 404 422 500 ).each do |code|
+    get code, :to => "errors#show", :code => code
+  end
+
+
 end

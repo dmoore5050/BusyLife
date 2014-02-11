@@ -1,10 +1,10 @@
 class NotebookBoard < ActiveRecord::Base
-  attr_accessible :notebook_id, :board_id, :list_id, :user_id, :compiled_update_times, :share_flag
+  attr_accessible :notebook_id, :board_id, :list_id, :user_id, :compiled_update_times, :share_flag, :in_progress
 
   validates :notebook_id, presence: true
   validates :board_id,    presence: true
   validates :user_id,     presence: true
-  validates_uniqueness_of :list_id, scope: [:notebook_id]
+  validates_uniqueness_of :board_id, scope: [:notebook_id]
 
   belongs_to :notebook
   belongs_to :board
@@ -27,7 +27,7 @@ class NotebookBoard < ActiveRecord::Base
   end
 
   def self.validate_records
-    invalid_records = NotebookBoard.where(list_id: nil).all
+    invalid_records = NotebookBoard.where(list_id: nil).to_a
     invalid_records.each do |record|
       record.destroy
     end

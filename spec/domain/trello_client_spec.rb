@@ -74,8 +74,8 @@ describe TrelloClient, 'instance' do
     it { should be_a_kind_of Array }
     its(:first)     { should be_a_kind_of Hash }
     its(:first)     { should have_key 'content' }
-    its(:first)     { should have_value 'Write initial integration tests' }
-    its(:length)    { should eq 54 }
+    its(:first)     { should have_value 'Create repo' }
+    its(:length)    { should be > 0 }
   end
 
   describe TrelloClient, '#remove_outdated_cards' do

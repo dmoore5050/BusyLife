@@ -15,6 +15,7 @@
 //= require_tree .
 
 $(document).ready(function() {
+  // dynamically set values for delete synchronization fields from checked boxes
   $('.checkbox_form').each(function(){
     var form = this;
     aggregateValues(form);
@@ -32,4 +33,28 @@ $(document).ready(function() {
     });
     $(form).next().find('input[name="notebook_board[notebook]"]').val(inputValues);
   }
+
+  // filter already-selected boards from map dropdowns
+  $('select').on('change', function(){
+    var $changed  = $(this);
+    var selects   = $('.edit_notebook_board').find('select');
+    var selected  = selects.find(':selected').text();
+
+    selects.each(function(){
+      if (this.name != $changed.attr('name')) {
+        var options = $(this).find("option");
+        options.each(function(){
+          var option = $(this);
+          if (!option.is(':selected') && option.text() !== "---Create New---") {
+            if (selected.indexOf(option.text()) != -1) {
+              option.prop('disabled', true);
+            } else {
+              option.prop('disabled', false);
+            }
+          }
+        });
+      }
+    });
+  });
+
 });

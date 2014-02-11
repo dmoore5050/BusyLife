@@ -2,7 +2,7 @@
 %br
 %h2 Add New Link
 %h3 Select notebooks and board to synchronize
-= simple_form_for notebook_board, :url => synchronizations_path, :method => :post  do |f|
+= simple_form_for notebook_board, :url => prepare_synchronizations_path, :method => :post  do |f|
 	= f.input :notebook_id,
 			collection: notebook_list.map{ |n| [ n.name, "#{n.guid}|#{n.name}"] },
 			as: :check_boxes,
@@ -27,11 +27,11 @@
 	- unless notebook_boards.empty?
 		%h1 Edit Previously Setup Links
 		- notebook_boards.each do |notebook_board|
-			%h2 Board: #{get_board_name notebook_board.board_id }
+			%h2 Board: #{ get_board_name(notebook_board.board_id) }
 			= simple_form_for notebook_board, :url => synchronization_path(notebook_board), :method => :put, :html=> { class: 'checkbox_form' } do |f|
-				= f.input :id, :as => :hidden, :input_html => { :value => notebook_board.id }
+				= f.input :id, :as => :hidden, :input_html => { :value => notebook_board.board_id }
 				= f.input :notebook_id,
-						collection: notebook_list.map{ |n| [n.name, "#{n.guid}|#{n.name}"] },
+						collection: notebook_list.map{ |n| [n.name, "#{ n.guid }|#{ n.name }#{ get_list_info(n.guid, notebook_board.board_id) }"] },
 						as: :check_boxes,
 						label: 'Select Notebooks:',
 						wrapper_html: { class: 'notebook_checkbox_group' },
@@ -41,5 +41,4 @@
 				= f.button :submit, "Update and Sync Now", :class => 'sync_btn'
 			= simple_form_for notebook_board, :url => 'destroy', :method => :delete do |f|
 				= f.input :notebook, :as => :hidden
-				= f.input :board, :as => :hidden, :input_html => { :value => notebook_board.board_id }
 				= f.button :submit, "Delete Synchronizations", :class => 'delete_btn'
