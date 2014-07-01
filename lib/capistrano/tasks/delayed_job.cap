@@ -1,0 +1,70 @@
+namespace :delayed_job do
+
+  def args
+    fetch(:delayed_job_args, "")
+  end
+
+  def delayed_job_roles
+    fetch(:delayed_job_server_role, :app)
+  end
+
+  desc 'Stop the delayed_job process'
+  task :stop do
+    on roles(delayed_job_roles) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :bundle, :exec, :'bin/delayed_job', :stop
+        end
+      end
+    end
+  end
+
+  desc 'Start the delayed_job process'
+  task :start do
+    on roles(delayed_job_roles) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :bundle, :exec, :'bin/delayed_job', args, :start
+        end
+      end
+    end
+  end
+
+  desc 'Restart the delayed_job process'
+  task :restart do
+    on roles(delayed_job_roles) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :bundle, :exec, :'bin/delayed_job', args, :restart
+        end
+      end
+    end
+  end
+
+  desc 'Start webhook workers 0-9'
+  task :start_webhook_workers do
+    on roles(delayed_job_roles) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          10.times do |i|
+            execute :bundle, :exec, :'bin/delayed_job', "-i #{i} --queue=webhook_#{i}", :start
+          end
+        end
+      end
+    end
+  end
+
+  desc 'Start sync workers 0-9'
+  task :start_sync_workers do
+    on roles(delayed_job_roles) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          10.times do |i|
+            execute :bundle, :exec, :'bin/delayed_job', "-i #{i + 10} --queue=sync_#{i}", :start
+          end
+        end
+      end
+    end
+  end
+
+end

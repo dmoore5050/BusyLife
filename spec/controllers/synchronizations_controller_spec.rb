@@ -16,7 +16,8 @@ describe SynchronizationsController do
   let!(:list)          { FactoryGirl.create :list, board: board }
   let!(:list2)         { FactoryGirl.create :list2, board: board }
   let!(:nbb)           { FactoryGirl.create :notebook_board, board: board, notebook: notebook, user: user, list: list }
-  let!(:nbb2)          { FactoryGirl.create :notebook_board, board: board, notebook: notebook4, user: user, list: list}
+  let!(:nbb2)          { FactoryGirl.create :notebook_board, board: board, notebook: notebook4, user: user, list: list }
+  let!(:nbb3)          { FactoryGirl.create :notebook_board, board: board2, notebook: notebook3, user: user, list: list2 }
 
   before do sign_in user end
 
@@ -119,6 +120,14 @@ describe SynchronizationsController do
       response.body.should be_blank
     end
 
+    it 'should respond OK to external POST request with closed list params' do
+      VCR.use_cassette('trello_listener_closed_list') do
+        post :trello_listener, user_id: user.id, list_id: list2.id, model: { closed: true }, synchronization: { action: { id: '123', type: '', data: {} } }
+        response.should be_success
+        response.body.should be_blank
+      end
+    end
+
     it 'should respond OK to external POST request with archived card' do
       VCR.use_cassette('trello_listener_remove_card') do
         trello_auth.destroy
@@ -128,18 +137,10 @@ describe SynchronizationsController do
         trello_client = TrelloClient.new auth
         new_list.set_content_string trello_client
         trello_client.update_list
-        new_nbb = FactoryGirl.create :notebook_board, board: board2, notebook: notebook, user: user, list: new_list
-        new_nbb_b = FactoryGirl.create :notebook_board, board: board3, notebook: notebook, user: user, list: new_list_b
+        new_nbb = FactoryGirl.create :notebook_board, board: board2, notebook: notebook4, user: user, list: new_list
+        new_nbb_b = FactoryGirl.create :notebook_board, board: board3, notebook: notebook4, user: user, list: new_list_b
 
         post :trello_listener, user_id: user.id, list_id: new_list.id, model: { closed: false }, synchronization: { action: { id: '123', data: { card: { name: 'Content 1', id: '52b609e25d5927f00a00a4de' } } } }
-        response.should be_success
-        response.body.should be_blank
-      end
-    end
-
-    it 'should respond OK to external POST request with closed list params' do
-      VCR.use_cassette('trello_listener_closed_list') do
-        post :trello_listener, user_id: user.id, list_id: list.id, model: { closed: true }, synchronization: { action: { id: '123', type: '', data: {} } }
         response.should be_success
         response.body.should be_blank
       end
@@ -215,7 +216,7 @@ describe SynchronizationsController do
     it 'should return an array of 6 records' do
       expected = subject.send 'notebook_boards'
       expected.class.should eq Array
-      expected.length.should eq 6
+      expected.length.should eq 7
       expected.first.class.should eq NotebookBoard
     end
   end
@@ -224,7 +225,7 @@ describe SynchronizationsController do
     it 'should return string(s) containing guid and name given notebook id' do
       notebook = Notebook.create guid: 'the_guid', name: 'notebook name', user_id: user.id
       NotebookBoard.create notebook_id: notebook.id, board_id: board.id, list_id: list.id, user_id: user.id
-      subject.send(:find_notebook_guids, board.id)[1].should include "c9e72153-5dff-475f-bbea-7b8ab18f6a00|dmoore5050's notebook|#{list.id}"
+      subject.send(:find_notebook_guids, board.id).detect { |g| g.include? "#{notebook4.guid}|dmoore5050's notebook|#{list.id}" }.should_not be_nil
     end
   end
 

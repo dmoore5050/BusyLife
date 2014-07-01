@@ -26,12 +26,12 @@ describe Authentication do
 
     it "should return true if has provider" do
       provider = "evernote"
-      instance.has?(provider).should be_true
+      instance.has?(provider).should be true
     end
 
     it "should return false if user does not have provider" do
       provider = "some_provider"
-      instance.has?(provider).should be_false
+      instance.has?(provider).should be false
     end
   end
 

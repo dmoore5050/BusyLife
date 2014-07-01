@@ -1,10 +1,11 @@
 set :stage, :production
 
-role :app, %w{bl_deployer@mylifebook.com}
-role :web, %w{bl_deployer@mylifebook.com}
-role :db,  %w{bl_deployer@mylifebook.com}
+role :app, %w(bl_deployer@mylifebook.com)
+role :web, %w(bl_deployer@mylifebook.com)
+role :db,  %w(bl_deployer@mylifebook.com)
+role :worker, %w(bl_deployer@mylifebook.com)
 
-server 'mylifebook.com', user: 'bl_deployer', roles: %w{web app db}
+server 'mylifebook.com', user: 'bl_deployer', roles: %w(web app db worker)
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options

@@ -34,20 +34,3 @@ describe Board, '.set_board' do
     board.name.should eq 'test board'
   end
 end
-
-describe Board, '.find_board_by_guid' do
-
-  it 'should find a board if given guid' do
-    Board.create(guid: '1', name: 'test board', user_id: 1)
-    guid = '1'
-    board = Board.find_board_by_guid guid
-    board.name.should eq 'test board'
-  end
-
-  it 'should return nil if given invalid guid' do
-    guid = '1'
-    board = Board.find_board_by_guid guid
-    board.should eq nil
-  end
-
-end

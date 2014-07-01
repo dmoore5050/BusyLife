@@ -31,18 +31,3 @@ describe Notebook, '.set_notebook' do
     notebook.name.should eq 'test notebook'
   end
 end
-
-describe Notebook, '.find_notebook_by_guid' do
-  it 'should find notebook if given valid guid' do
-    Notebook.create(guid: '1', name: 'test notebook', user_id: 1)
-    guid = '1'
-    notebook = Notebook.find_notebook_by_guid guid
-    notebook.name.should eq 'test notebook'
-  end
-
-  it 'should return nil if given invalid guid' do
-    guid = '1'
-    notebook = Notebook.find_notebook_by_guid guid
-    notebook.should eq nil
-  end
-end

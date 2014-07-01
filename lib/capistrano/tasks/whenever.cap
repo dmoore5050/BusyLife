@@ -1,0 +1,25 @@
+namespace :whenever do
+
+  desc 'update whenever crontab'
+  task :update_whenever_crontab do
+    on roles(:app) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :bundle, :exec, :'whenever', '--update-crontab'
+        end
+      end
+    end
+  end
+
+  desc 'restart crontab'
+  task :restart_crontab do
+    on roles(:app) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :sudo, :service, :'cron', 'restart'
+        end
+      end
+    end
+  end
+
+end

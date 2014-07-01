@@ -98,7 +98,6 @@ describe TrelloClient, 'instance' do
 
   describe TrelloClient, '#build_card_description' do
     let!(:evernote_client) { EvernoteClient.new evernote_auth }
-    let!(:guid)            { '123456abcdefg' }
     let!(:note)            { { 'content' => 'sample content', 'guid' => '03adc9f2-5564-44cc-9b77-6859ea5f91eb' } }
     let!(:share_url) do
       VCR.use_cassette('trello client share_single_note') do
@@ -108,7 +107,7 @@ describe TrelloClient, 'instance' do
 
     subject do
       VCR.use_cassette('trello client description') do
-        client = trello_client.build_card_description evernote_client, note, guid, share_flag
+        trello_client.build_card_description user, note, share_flag
       end
     end
 
@@ -116,7 +115,6 @@ describe TrelloClient, 'instance' do
       let!(:share_flag) { true }
 
       it { should be_a_kind_of String }
-      it { should include guid }
       it { should include note['guid'] }
       it { should include share_url }
     end
@@ -125,7 +123,6 @@ describe TrelloClient, 'instance' do
       let!(:share_flag) { false }
 
       it { should be_a_kind_of String }
-      it { should include guid }
       it { should include note['guid'] }
       it { should_not include share_url }
     end

@@ -4,7 +4,7 @@ describe EvernoteClient, 'instance' do
   let!(:user)            { FactoryGirl.create :user }
   let!(:evernote_auth)   { FactoryGirl.create :evernote_auth }
   let!(:evernote_client) { EvernoteClient.new evernote_auth }
-  let!(:notebook)        { FactoryGirl.create :notebook, user: user }
+  let!(:notebook)        { FactoryGirl.create :notebook3, user: user }
 
   before do
     evernote_client.stub(:current_user).and_return(user)
@@ -107,7 +107,7 @@ describe EvernoteClient, 'instance' do
     end
 
     it { should be_a_kind_of Fixnum}
-    it { should eq 345 }
+    it { should eq 14 }
   end
 
   describe EvernoteClient, '#get_note' do
@@ -115,41 +115,34 @@ describe EvernoteClient, 'instance' do
     # let!(:evernote_client) { EvernoteClient.new evernote_auth }
   end
 
-  describe EvernoteClient, '#build_note_array' do
-    let!(:note_count)      do
-      VCR.use_cassette('evernote client total_note_count') do
-        evernote_client.total_note_count notebook
-      end
-    end
+  describe EvernoteClient, '#update_note_array, blank array' do
 
     subject do
       VCR.use_cassette('evernote client get_notes') do
-        string = evernote_client.build_note_array notebook
-        eval string
+        eval evernote_client.update_note_array nil, notebook
       end
     end
 
     it { should be_a_kind_of Array }
+    its(:length) { should eq 11 }
     its(:first)  { should be_a_kind_of Hash }
     its(:first)  { should have_key 'content' }
     its(:first)  { should have_key 'guid' }
     its(:first)  { should have_key 'updated' }
-    its(:length) { should eq 54 }
   end
 
-  describe EvernoteClient, '#update_note_array' do                    ####UPDATE
-    let!(:update_times)    { "[{\"content\"=>\"Content 1\", \"guid\"=>\"03adc9f2-5564-44cc-9b77-6859ea5f91eb\", \"updated\"=>\"9999999999999\"}, {\"content\"=>\"Content 2\", \"guid\"=>\"39874d8a-a3cf-4b08-a492-ef3647f9837d\", \"updated\"=>\"137916975500\"},{\"content\"=>\"Content 3\", \"guid\"=>\"758be8e4-63f6-4a57-9f7c-8c8af1927905\", \"updated\"=>\"1379169756000\"},{\"content\"=>\"Content 4\", \"guid\"=>\"edd29c5d-f21c-47cf-a1b5-6a546168e517\", \"updated\"=>\"|1379169756000\"},{\"content\"=>\"Content 5\", \"guid\"=>\"848a54c3-13c7-4a13-9107-925fffee46ff\", \"updated\"=>\"1379169757000\"},{\"content\"=>\"Content 6\", \"guid\"=>\"45410c77-9a1e-4ba1-a6b8-84bafcf8056f\", \"updated\"=>\"1379169758000\"}]" }
+  describe EvernoteClient, '#update_note_array, existing array' do
+    let!(:update_times)    { "[{\"content\"=>\"YAYAYAYAYA\", \"guid\"=>\"e4646531-3ec3-4665-b35f-98e0f144535c\", \"updated\"=>\"9999999999999\"}, {\"content\"=>\"Aw hell yeah\", \"guid\"=>\"f772cf7c-89f9-4167-8959-bc2dd1cc883b\", \"updated\"=>\"1391482423000\"}, {\"content\"=>\"This is a Z Test Note\", \"guid\"=>\"78968e17-e951-4f3a-9832-6cec42bca03b\", \"updated\"=>\"1391483389000\"}, {\"content\"=>\"FINAL Z TESTING\", \"guid\"=>\"548eb231-0369-411b-90a5-993a9c9f61a7\", \"updated\"=>\"1391531368000\"}, {\"content\"=>\"New Z Test Cardzz\", \"guid\"=>\"b73d8044-fb2c-49e2-8af2-0f5254b9c3ee\", \"updated\"=>\"999999999999\"}, {\"content\"=>\"New Z Test Card\", \"guid\"=>\"141457ef-5276-4422-b824-7502f160d32b\", \"updated\"=>\"1391541942000\"}, {\"content\"=>\"Card Description Test\", \"guid\"=>\"5d73f221-721c-42b2-a713-07582c2879dc\", \"updated\"=>\"1391629891000\"}, {\"content\"=>\"some content\", \"guid\"=>\"13eb78ce-3776-4d46-b608-f2ba1825fef0\", \"updated\"=>\"1393445247000\"}]" }
     let!(:notebook_board)  { NotebookBoard.create(user_id: user.id, board_id: 1, notebook_id: notebook.id, compiled_update_times: update_times)}
 
     subject do
       VCR.use_cassette('evernote client get_updated_notes') do
-        string = evernote_client.update_note_array notebook_board
-        eval string
+        eval evernote_client.update_note_array notebook_board
       end
     end
 
     it { should be_a_kind_of Array }
-    its(:length) { should eq 61 }
+    its(:length) { should eq 12 }
     its(:first)  { should be_a_kind_of Hash }
     its(:first)  { should have_key 'content' }
     its(:first)  { should have_key 'guid' }

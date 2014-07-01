@@ -42,14 +42,14 @@ describe List, 'instance' do
     its(:name)     { should eq name }
     its(:board_id) { should eq board.id }
     its(:contents) { should be_a_kind_of String }
-    its(:contents) { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"}" }
+    its(:contents) { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"" }
   end
 
   describe List, '#set_content_string' do
     let!(:list) { FactoryGirl.create :list, board: board }
 
     it 'should start with a list where contents field is populated' do
-      list.contents.should eq "[{\"content\"=>\"name\", \"guid\"=>\"guid\"}]"
+      list.contents.should eq "[ { \"content\"=>\"name\", \"guid\"=>\"guid\", \"desc\"=>\"desc\" } ]"
     end
 
     subject do
@@ -60,7 +60,7 @@ describe List, 'instance' do
     end
 
     it { should be_a_kind_of String }
-    it { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"}" }
+    it { should include "{\"content\"=>\"Create repo\", \"guid\"=>\"51d6d154e1c74bf73b002fc2\"" }
   end
 
   describe List, '.set_webhook_attr' do
@@ -94,23 +94,6 @@ describe List, 'instance' do
       list.name.should eq 'test list'
       list.guid.should eq guid
       list.board_id.should eq 999
-    end
-  end
-
-  describe List, '.find_list_by_guid' do
-    it 'should find a list if given guid' do
-      List.create(guid: guid, name: name, board_id: board.id)
-      list = List.find_list_by_guid guid
-      list.should be_a_kind_of List
-      list.guid.should eq guid
-      list.name.should eq name
-      list.board_id.should eq board.id
-    end
-
-    it 'should return nil if given invalid guid' do
-      guid = '1'
-      list = List.find_list_by_guid guid
-      list.should eq nil
     end
   end
 

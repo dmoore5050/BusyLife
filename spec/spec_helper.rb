@@ -51,6 +51,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  config.infer_spec_type_from_file_location!
 end
 
 Capybara.default_host = 'http://busylife.dev'
